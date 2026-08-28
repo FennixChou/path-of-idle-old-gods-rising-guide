@@ -244,8 +244,15 @@ footer a{word-break:break-all;}
 
 <section id="s4">
   <h2><span class="no">IV</span>詳細天賦點法</h2>
-  <p class="lead">先講機制，再給各職「遊戲內建 build 模板」（技能／精通／屬性優先序／套裝／符文）。</p>
-  <div class="tip fix"><span class="t">✦ Blessing 天賦點怎麼來（機制・共識）</span>Blessing 不是「選哪條分支」，而是花 <strong>Ancient Blood（古血）</strong>把角色 Blessing 等級推到 <strong>5／10／15／20／25／30 六個里程碑，各解鎖 1 個天賦點＝每人上限 6 點</strong>。等級上限隨神殿(Temple)提升（Temple Lv20 → Blessing 可到 Lv50）。<span class="tag-open">目前查無正式 respec/重置機制</span>——但技能可用 Baptism 重 roll（見配置系統）。<strong>這 6 點要投進哪些技能/精通，就是下面模板在回答的。全網沒有「逐點數字」，官方模板給的是「該點哪些技能與精通」。</strong></div>
+  <p class="lead">先搞懂「點數怎麼運作」（這是關鍵），再給各職官方模板＋投點建議。</p>
+  <div class="tip fix"><span class="t">🔑 為什麼沒有「固定配點表」——點數機制真相</span>
+  每隻角色的天賦是一張網格：<strong>6 個技能格 ＋ 12 個精通格 ＋ 6 層樓</strong>（樓層隨角色等級 Lv1/4/10/20/32/50 開）。但<strong>「哪個技能長在哪一格，是每隻角色隨機捲出來的」</strong>——所以不存在「第幾格點幾點」的通用表。你能規劃的是<strong>「把點投進哪些節點、各投多少」＋技能靠 Baptism 重 roll 湊出想要的組合</strong>。
+  <ul style="margin:8px 0 0">
+    <li><strong>天賦點哪來</strong>：＝（角色等級 − 1）＋ 稀有度起始點（Common 1／Fine 2／Rare 3／<strong>Legendary 4／Mythic 5</strong>）＋ <strong>Blessing 最多 6 點</strong>（Blessing 等級 5/10/15/20/25/30 各 +1，非來自升級或裝備、需耗古血）。→ 一隻 <strong>Lv50 傳奇角色約 59 點</strong>可分。</li>
+    <li><strong>技能「等級」＝你投進那節點的點數</strong>（Bladewind 的 Archer Guard Lv10 ＝ 投 10 點；Xanue 的 Lightning「5 點就滿盾」）。</li>
+    <li>查無正式 respec；技能組合靠 Baptism 重 roll、精通靠 Inspire（見配置系統）。</li>
+  </ul>
+  <span class="tag-open" style="display:block;margin-top:8px">誠實聲明：全網（含官方 wiki）<strong>沒有「6 點逐點分配數字」</strong>，唯一玩家實測逐技能等級只有戰士 Bladewind 一組。下面各職〔推〕標記者，是<strong>賈維斯依官方技能清單＋屬性優先序＋上述機制推的「投點優先序/起手」</strong>，非官方定案——因技能格隨機捲，照優先序投就對、不用糾結固定格位。</span></div>
 
   <h3>Mage — 雷電流（速刷核心）　<span class="tag-cons" style="font-weight:400">【grandwiki 官方模板】</span></h3>
   <div class="build">
@@ -256,7 +263,7 @@ footer a{word-break:break-all;}
       <dt>屬性優先序</dt><dd>Dex ＞ Int ＞ 元素攻擊 ＞ 暴擊值 ＞ 元素/雷電傷害 ＞ 施法速度 ＞ 全技能速度 ＞ 施法命中 ＞ 法術傷害</dd>
       <dt>套裝／符文</dt><dd>Heaven's Wrath 系；符文「Inspiration」(Ith-Sol-Fal → Aura of Lightning)</dd>
     </dl>
-    <div class="note">核心玩法：疊 <strong>Spell Speed</strong> 縮短 Lightning Storm 攻擊間隔。</div>
+    <div class="note">核心玩法：疊 <strong>Spell Speed</strong> 縮短 Lightning Storm 攻擊間隔。<br><span class="tag-solo">投點〔推〕</span>：主傷 Lightning Storm 點高（主輸出）→ 護盾轉換被動 <strong>約 5 點吃滿盾</strong>（Xanue 實測）→ Brilliance Aura 回魔 1–2 點 → 其餘灌精通 Thunder／Ruin／Scholar；屬性照上表 Dex＞Int＞元素攻擊＞暴擊。</div>
   </div>
   <div class="build">
     <div class="bhead"><span class="bname">Lightning Basic Attack Build</span><span class="bkind easy">速刷／易</span></div>
@@ -276,7 +283,7 @@ footer a{word-break:break-all;}
       <dt>屬性優先序</dt><dd>Str ＞ Dex ＞ 生命 ＞ 全防禦 ＞ 全速度 ＞ 全抗性</dd>
       <dt>套裝</dt><dd>Kahn's Fate 系</dd>
     </dl>
-    <div class="note">Vigilant Strike 疊 Mettle 延長 Blood Boil 持續。</div>
+    <div class="note">Vigilant Strike 疊 Mettle 延長 Blood Boil 持續。<br><span class="tag-solo">投點</span>：戰士有唯一玩家實測逐點配置（見下方 Bladewind 綠框）——那組就是可照抄的實際點數。純 Blood Boil 走坦向者，主投 Blood Boil＋Unyielding／Toughness／Formation，屬性 Str＞Dex＞生命＞全防禦。</div>
   </div>
   <div class="build">
     <div class="bhead"><span class="bname">Archer Guard Build</span><span class="bkind easy">攻擊／易</span></div>
@@ -297,6 +304,7 @@ footer a{word-break:break-all;}
         <dt>精通</dt><dd class="ms">Offering・Chill・Excitement・Instinct・Ritual</dd>
         <dt>套/符文</dt><dd>Uruk's Devotion；符文 Defiance (Tral-Dol-Ko → Banner of Struggle)</dd>
       </dl>
+      <div class="note"><span class="tag-solo">投點〔推〕</span>：主投圖騰技能 Vortex／Windfury Totem 點高＋Flesh Offering 補；其餘灌精通 Offering／Chill／Ritual；屬性 Dex＞Int＞全防禦＞抗性。純 buff 無傷害，把點集中在圖騰與增益上。</div>
     </div>
     <div class="build">
       <div class="bhead"><span class="bname">Slime Rain Build</span><span class="bkind">純輔助</span></div>
@@ -305,6 +313,7 @@ footer a{word-break:break-all;}
         <dt>精通</dt><dd class="ms">Coordination・Torrent・Chill・Ritual・Instinct</dd>
         <dt>套裝</dt><dd>Vero's 系</dd>
       </dl>
+      <div class="note"><span class="tag-solo">投點〔推〕</span>：主投 Slime Rain＋Soul Drain 點高；Fortitude Elixir／Hallucinatory Mist 補坦克輔助（混編隊必備）；精通 Coordination／Torrent／Ritual；屬性 Int＞全防禦＞抗性。</div>
     </div>
   </div>
 
@@ -316,7 +325,7 @@ footer a{word-break:break-all;}
       <dt>精通</dt><dd class="ms">Radiance・Holy・Divinity・Barrier・Glitter</dd>
       <dt>套裝</dt><dd>Faelen's 系</dd>
     </dl>
-    <div class="note">Chastise 縮短 Holy Bolt 冷卻，頻放 Holy Bolt 同時治療＋屬性增益。<span class="tag-solo">（進階向另有 Sword of Divine Punishment 輸出模板，難度 Hard，靠疊 Aura 數縮 CD。）</span></div>
+    <div class="note">Chastise 縮短 Holy Bolt 冷卻，頻放 Holy Bolt 同時治療＋屬性增益。<br><span class="tag-solo">投點〔推〕</span>：主投 Holy Bolt＋Light of Healing 點高（治療核心）→ 三個 Aura（Focus／Flame／Lightning）各鋪底提供全隊增益 → 精通 Radiance／Holy／Divinity；屬性 Dex＞Int＞生命＞全防禦。<span class="tag-solo">（進階輸出向另有 Sword of Divine Punishment 模板，難度 Hard，靠疊 Aura 數縮 CD。）</span></div>
   </div>
 </section>
 
