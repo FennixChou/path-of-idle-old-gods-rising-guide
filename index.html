@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Path of Idle: Old Gods Rising 攻略</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0a0d11; --void-2:#10151b; --panel:#141b22; --panel-2:#1a232c;
+  --line:#243039; --line-soft:#1d262e;
+  --ink:#dfe6e2; --muted:#8a978f; --faint:#5f6c66;
+  --eldritch:#43c9a8; --eldritch-dim:#2c8a73; --eldritch-soft:rgba(67,201,168,.10);
+  --amethyst:#9a7ad6; --amethyst-soft:rgba(154,122,214,.12);
+  --blood:#cf4b4b; --blood-soft:rgba(207,75,75,.12);
+  --gold:#c9a94e; --gold-soft:rgba(201,169,78,.12);
+  --s-tier:#e0574e; --a-tier:#c9a94e; --b-tier:#5aa5c9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(67,201,168,.06), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(154,122,214,.05), transparent 55%),
+    var(--void);
+  color:var(--ink);
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  line-height:1.8;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px 80px;}
+a{color:var(--eldritch);text-decoration:none;border-bottom:1px solid rgba(67,201,168,.3);}
+a:hover{color:#6fe0c4;}
+h1,h2,h3{font-family:"Cinzel",serif;line-height:1.25;text-wrap:balance;}
+.num{font-variant-numeric:tabular-nums}
+
+/* hero */
+header.hero{text-align:center;padding:74px 16px 40px;position:relative;}
+.eyebrow{font-family:"Cinzel",serif;letter-spacing:.34em;font-size:.72rem;color:var(--eldritch);
+  text-transform:uppercase;margin-bottom:18px;}
+h1{font-size:clamp(2rem,6vw,3.3rem);font-weight:700;margin:0 0 6px;color:#f0f3ef;
+  text-shadow:0 0 30px rgba(67,201,168,.25);}
+.hero .zh{font-size:1.05rem;color:var(--muted);letter-spacing:.06em;margin-top:2px;}
+.hero .rune{font-size:1.6rem;color:var(--amethyst);letter-spacing:.5em;margin:22px 0 0;opacity:.7;}
+.metaline{margin-top:24px;font-size:.82rem;color:var(--faint);letter-spacing:.02em;}
+.metaline b{color:var(--muted);font-weight:500;}
+
+/* disclaimer */
+.warn{background:var(--blood-soft);border:1px solid rgba(207,75,75,.4);border-left-width:3px;
+  border-radius:10px;padding:16px 20px;margin:30px 0 8px;font-size:.9rem;color:#eddede;}
+.warn b{color:var(--blood);}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 6px;font-size:.78rem;}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:3px 11px;border-radius:999px;
+  border:1px solid var(--line);white-space:nowrap;}
+.badge.cons{background:var(--eldritch-soft);border-color:var(--eldritch-dim);color:var(--eldritch);}
+.badge.solo{background:var(--gold-soft);border-color:var(--gold);color:var(--gold);}
+.badge.open{background:var(--amethyst-soft);border-color:var(--amethyst);color:var(--amethyst);}
+
+/* nav */
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(10,13,17,.82);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);margin:40px -20px 0;padding:12px 20px;
+  display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-size:.82rem;}
+nav.toc a{color:var(--muted);border:none;}
+nav.toc a:hover{color:var(--eldritch);}
+
+/* sections */
+section{margin-top:52px;scroll-margin-top:60px;}
+h2{font-size:1.5rem;font-weight:600;color:#eef1ec;margin:0 0 4px;
+  display:flex;align-items:center;gap:12px;}
+h2 .no{font-size:.9rem;color:var(--eldritch);border:1px solid var(--eldritch-dim);
+  border-radius:8px;padding:2px 9px;font-family:"Cinzel",serif;}
+.lead{color:var(--muted);font-size:.96rem;margin:2px 0 20px;}
+h3{font-size:1.08rem;font-weight:600;color:var(--eldritch);margin:26px 0 8px;}
+p{margin:0 0 12px;}
+ul{margin:6px 0 14px;padding-left:22px;}
+li{margin:5px 0;}
+strong{color:#f0f3ef;font-weight:700;}
+.tag-cons{color:var(--eldritch);font-size:.76rem;font-weight:700;}
+.tag-solo{color:var(--gold);font-size:.76rem;font-weight:700;}
+.tag-open{color:var(--amethyst);font-size:.76rem;font-weight:700;}
+
+/* class / tier cards */
+.tiergrid{display:grid;gap:12px;margin-top:16px;}
+.tier-row{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:stretch;}
+.tier-badge{display:flex;align-items:center;justify-content:center;font-family:"Cinzel",serif;
+  font-size:1.5rem;font-weight:700;border-radius:10px;border:1px solid var(--line);}
+.tier-S{color:var(--s-tier);background:rgba(224,87,78,.10);border-color:rgba(224,87,78,.45);}
+.tier-A{color:var(--a-tier);background:rgba(201,169,78,.10);border-color:rgba(201,169,78,.4);}
+.tier-B{color:var(--b-tier);background:rgba(90,165,201,.10);border-color:rgba(90,165,201,.4);}
+.tier-cards{display:flex;flex-direction:column;gap:10px;}
+.ccard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 16px;}
+.ccard .cn{font-family:"Cinzel",serif;font-weight:600;color:#eef1ec;font-size:1.02rem;}
+.ccard .role{font-size:.78rem;color:var(--eldritch);margin-left:8px;letter-spacing:.04em;}
+.ccard p{margin:5px 0 0;font-size:.9rem;color:var(--muted);}
+
+/* comp cards */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;}
+.card.hl{border-color:var(--eldritch-dim);box-shadow:0 0 24px rgba(67,201,168,.07);}
+.card h3{margin:0 0 4px;color:#eef1ec;}
+.card .sub{font-size:.78rem;color:var(--faint);margin-bottom:8px;}
+.card .team{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
+.pill{font-size:.76rem;padding:3px 10px;border-radius:999px;background:var(--panel-2);
+  border:1px solid var(--line);color:var(--ink);}
+.pill.mage{border-color:var(--amethyst);color:#c3aef0;}
+.pill.war{border-color:var(--s-tier);color:#f0a49e;}
+.pill.priest{border-color:var(--eldritch-dim);color:var(--eldritch);}
+.card p{font-size:.88rem;color:var(--muted);margin:6px 0 0;}
+
+/* build table */
+.tablecard{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:14px;background:var(--panel);}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.88rem;}
+thead th{background:var(--panel-2);color:var(--muted);text-align:left;padding:11px 14px;
+  font-size:.74rem;letter-spacing:.05em;font-weight:700;border-bottom:1px solid var(--line);font-family:"Cinzel",serif;}
+td{padding:10px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:var(--eldritch-soft);}
+td b{color:#eef1ec;}
+
+/* callout */
+.tip{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--eldritch-dim);
+  border-radius:8px;padding:13px 16px;margin:14px 0;font-size:.9rem;}
+.tip.trap{border-left-color:var(--blood);}
+.tip .t{font-weight:700;color:#eef1ec;display:block;margin-bottom:3px;}
+.tip.trap .t{color:var(--blood);}
+
+footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:var(--faint);font-size:.8rem;}
+footer h3{color:var(--muted);font-size:.92rem;margin:0 0 8px;}
+footer ul{padding-left:18px;}
+footer a{word-break:break-all;}
+@media(max-width:560px){header.hero{padding:52px 8px 30px} .tier-row{grid-template-columns:44px 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Idle Auto-Battle · Party RPG · Lovecraftian</div>
+  <h1>Path of Idle</h1>
+  <div class="zh">Old Gods Rising — 職業・隊伍・天賦・裝備 攻略</div>
+  <div class="rune">✦ ⛧ ✦</div>
+  <div class="metaline">整理日 <b>2026-08-28</b>　·　遊戲 2026-08-12 上市（開發 Small Mill）　·　彙整自 Steam 討論區／指南＋社群攻略站</div>
+</header>
+
+<div class="warn">
+  <b>先讀這段：</b>這遊戲上市才 <b>16 天</b>、8 月內連更 7 個版本（1.0.3→1.0.9），社群仍小。沒有任何「官方認證最強 build」或多方驗證過的逐點配點/詞綴數值。本攻略把情報**分三級標示**，請把它當<b>起點</b>而非定案——數值隨改版隨時會變，帶看前（開玩前）建議自己再翻一次討論區最新串。
+</div>
+
+<div class="legend">
+  <span class="badge cons">● 社群共識</span>
+  <span class="badge solo">● 個別玩家回報</span>
+  <span class="badge open">● 未定論／有爭議</span>
+  <span style="color:var(--faint);align-self:center">— 每則情報都標了可信度來源</span>
+</div>
+
+<nav class="toc">
+  <a href="#s1">遊戲概述</a>
+  <a href="#s2">職業＆Tier</a>
+  <a href="#s3">隊伍搭配</a>
+  <a href="#s4">天賦流派</a>
+  <a href="#s5">裝備搭配</a>
+  <a href="#s6">實用Tips</a>
+  <a href="#s7">來源</a>
+</nav>
+
+<section id="s1">
+  <h2><span class="no">I</span>遊戲概述</h2>
+  <p class="lead">Lovecraft 黑暗奇幻題材的「掛機自動戰鬥 × 隊伍 RPG × 城鎮建設 × 裝備打造」，非 roguelike。</p>
+  <p><span class="tag-cons">【社群共識】</span>核心循環：招募「<strong>Godsworn</strong>」（被腐化的囚犯信徒）→ 培養、配裝、設定技能 → 編隊（一線 3 人、可開多條戰線）→ <strong>全自動戰鬥</strong>（可背景掛機）→ 推「Expedition」主線關卡撞難度牆 → 回城升級建築（Temple／Prison／Workshop／Market／Vault…）→ 用「Worshipper Infusion」把資源轉成永久帳號強度 → 循環變強。</p>
+  <p><strong>玩家介入集中在「戰前配置」</strong>，戰鬥本身無操作。前期主動性強（決定練誰、配什麼 build），後期漸偏純掛機。有玩過《流亡黯道 PoE》數值系統的人上手較快。</p>
+  <p>後期解鎖五種進階模式：<strong>Expedition</strong>（主線）、<strong>Exploration</strong>（多線平行刷獎勵）、<strong>Divine Tower</strong>（爬塔）、<strong>Alternate Dimension</strong> 與 <strong>Finality</strong>（終局）。<span class="tag-open">【未定論】</span>Finality 是否為真・無盡模式，社群尚無定論。</p>
+</section>
+
+<section id="s2">
+  <h2><span class="no">II</span>六職業 ＆ Tier List</h2>
+  <p class="lead">六職業經多來源交叉確認：Warrior／Cleric／Mage／Priest／Hunter／Mercenary。下方 Tier 為攻略站與指南作者排序收斂結果，<span class="tag-open">非社群票選、且與部分實戰玩家意見有張力（見下）</span>。</p>
+  <div class="tiergrid">
+    <div class="tier-row">
+      <div class="tier-badge tier-S">S</div>
+      <div class="tier-cards">
+        <div class="ccard"><span class="cn">Cleric</span><span class="role">輔助／續航</span><p>Buff 全隊傷害＋持續治療，被多篇攻略列為「必備輔助」。續航核心。</p></div>
+        <div class="ccard"><span class="cn">Warrior</span><span class="role">坦／近戰／召喚</span><p>可召喚額外單位，坦與輸出混合、容錯高，前中後期都站得住。</p></div>
+      </div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-badge tier-A">A</div>
+      <div class="tier-cards">
+        <div class="ccard"><span class="cn">Mage</span><span class="role">遠程 AoE 主 DPS</span><p>元素範圍法傷、清圖最快的核心（見速刷隊）。需後排站位保護。</p></div>
+        <div class="ccard"><span class="cn">Priest</span><span class="role">近戰＋魔法混合</span><p>吃裝備、操作較複雜；純輔助（Totem/Slime）或輸出向（Bone Chill）皆可。實戰玩家常拿它取代 Cleric 當輔助位。</p></div>
+      </div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-badge tier-B">B</div>
+      <div class="tier-cards">
+        <div class="ccard"><span class="cn">Hunter</span><span class="role">遠程物傷（前期強）</span><p>前期強勢、後期常被替換；狼召喚流有玩家認為偏弱。</p></div>
+        <div class="ccard"><span class="cn">Mercenary</span><span class="role">後期第三位選項</span><p>樣本不足未正式評級。Ballista 流單體 Boss DPS 高（玩家回報 20–30 萬）但無 AoE。</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="tip trap"><span class="t">⚠ 資料打架，誠實提醒</span>有一個攻略站給出完全不同的職業名單（出現 Shadowblade／Monk），與上述多方印證名單矛盾、疑為內容品質問題。<strong>Shadowblade／Monk 是否真實存在待查證</strong>；本表以六職業版本為準。</div>
+</section>
+
+<section id="s3">
+  <h2><span class="no">III</span>隊伍搭配</h2>
+  <p class="lead">「一線 3 人」。下面分「速刷」與「平衡推進」兩派，並誠實標出社群的爭議點。</p>
+  <div class="grid2">
+    <div class="card hl">
+      <h3>⚡ 最速刷圖</h3>
+      <div class="sub"><span class="tag-cons">【社群共識】23–24 秒清圖</span></div>
+      <div class="team"><span class="pill mage">Lightning Mage</span><span class="pill mage">Lightning Mage</span><span class="pill mage">Lightning Mage</span></div>
+      <p><strong>3× Lightning Storm Mage</strong> 是公認最快的 farming 組合，有玩家影片示範 23–24 秒清一張圖。前期版本可先用 <strong>2 Lightning Mage ＋ 1 Totem Priest</strong> 過渡（補生存）。</p>
+    </div>
+    <div class="card">
+      <h3>🛡 平衡推進（主流三人組）</h3>
+      <div class="sub"><span class="tag-cons">【社群共識】最多獨立來源提及</span></div>
+      <div class="team"><span class="pill war">Warrior</span><span class="pill mage">Lightning Mage</span><span class="pill priest">Priest</span></div>
+      <p><strong>Warrior（Blood Boil 或 Iron Guard）＋ Lightning Mage（主 AoE DPS）＋ Totem/Slime Priest（增益＋治療）</strong>。坦＋爆發＋續航齊全，是推關最泛用的骨架。</p>
+    </div>
+    <div class="card">
+      <h3>🌰 新手友善版</h3>
+      <div class="sub"><span class="tag-solo">【攻略站推薦】新手向</span></div>
+      <div class="team"><span class="pill priest">Cleric</span><span class="pill war">Warrior</span><span class="pill mage">Mage</span></div>
+      <p>SEO 攻略站普遍推 <strong>Cleric＋Warrior＋Mage</strong> 為新手首選（對應 Tier 表 S/S/A）。四平八穩、容錯高。</p>
+    </div>
+    <div class="card">
+      <h3>🎯 單體 Boss / 打樁</h3>
+      <div class="sub"><span class="tag-solo">【個別玩家】</span></div>
+      <div class="team"><span class="pill">Ballista Mercenary</span><span class="pill priest">Cleric</span><span class="pill">＋盾</span></div>
+      <p>後期（T17–19）Ballista Mercenary 配盾＋自動治療 Cleric，玩家回報可到 20–30 萬 DPS。無 AoE，專打單體。</p>
+    </div>
+  </div>
+  <div class="tip trap"><span class="t">⚠ 社群爭議：輔助位到底放 Cleric 還是 Priest？</span><span class="tag-open">【未定論】</span>一派玩家（Ssenkrad_II）稱 <strong>Priest-Mage-Warrior「輾壓一切」</strong>、認為 Cleric/Hunter 跟不上；SEO 攻略站則推 Cleric。甚至有玩家（Kuriboh）主張「這遊戲不需要治療、全力輸出就好」。<strong>結論：輔助位 Cleric vs Priest 沒有定案</strong>，看你的裝備進度與難度自行取捨。</div>
+</section>
+
+<section id="s4">
+  <h2><span class="no">IV</span>天賦點法／流派</h2>
+  <p class="lead"><span class="tag-open">【未定論】</span>沒有任何來源（含官方 wiki）願意發布逐點配點順序——理由是版本變動太快（1.0.1→1.0.9）。以下給「具名流派」與「配置系統」，配點細節請以遊戲內當前版本為準。</p>
+
+  <h3>各職業具名流派（流派名稱屬社群共識，非配點數值）</h3>
+  <div class="tablecard">
+  <table>
+    <thead><tr><th>職業</th><th>主流流派</th><th>定位</th></tr></thead>
+    <tbody>
+      <tr><td><b>Warrior</b></td><td>Blood Boil（火傷/回血）、Iron Guard／Honor Guard（坦）、Archer Guard（物理輸出）</td><td>坦或混合輸出</td></tr>
+      <tr><td><b>Mage</b></td><td>Lightning（帶被動護盾，最泛用）、Fire</td><td>AoE 主 DPS</td></tr>
+      <tr><td><b>Priest</b></td><td>Slime／Totem（純輔助）、Bone Chill（輸出向，較難）</td><td>輔助或輸出</td></tr>
+      <tr><td><b>Cleric</b></td><td>Divine Punishment、Holy Bolt &amp; Heal、Mortan 套裝＋Divine Shelter（抗自傷）</td><td>輔助／續航</td></tr>
+      <tr><td><b>Hunter</b></td><td>Pierce、Wolf Hunter（坦獵混合）</td><td>前期物傷</td></tr>
+      <tr><td><b>Mercenary</b></td><td>Ballista（單體高 DPS）</td><td>後期單體</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>配置系統（怎麼調 build）<span class="tag-cons" style="font-weight:400"> 【社群共識・機制說明】</span></h3>
+  <ul>
+    <li><strong>天賦點（Blessing）</strong>：v1.0.5 起每 5 等給 1 點、上限 6 點、無隨機；可個別鎖定/解鎖、可整組重置（<strong>版本更新後建議重置重配</strong>）。</li>
+    <li><strong>Baptism（Temple）</strong>：專門用來「重 roll 主動技能」搭配被動做 build，高難度尤其吃這套；已鎖的技能會保留。</li>
+    <li><strong>Mutation 異變（跨職業主動技能）</strong>：傳奇/神話 Godsworn 用 Faith Skulls 合成 <strong>Crystallized Skulls</strong>，在 Sanctum 洗出別職業的主動技能（Stele 15 後傳奇自動得 1 個、神話最多 2 個）。</li>
+    <li><strong>Masteries 精通（跨職業被動，圓形天賦）</strong>：Temple 的 <strong>Inspire</strong> 功能（Stele 12 解鎖）洗入其他職業被動，用 Dark Stars／Void Stars（Stele 13+）移除不要的。</li>
+  </ul>
+  <div class="tip"><span class="t">✦ 通則（社群共識）</span><strong>專精 1–2 種傷害屬性、不要分散</strong>。火傷/召喚/暴擊三選一去疊，混在一起會互相稀釋。先看角色被動技能定方向，再用 Baptism 把主動技能洗到配合被動。</div>
+</section>
+
+<section id="s5">
+  <h2><span class="no">V</span>裝備搭配</h2>
+  <p class="lead">框架原則為社群共識，具體詞綴數值多為個別玩家回報、隨改版變動。</p>
+  <ul>
+    <li><span class="tag-cons">【共識】</span><strong>一個 build 只鎖 1–2 個核心屬性</strong>（如召喚流只堆「召喚數＋召喚物存活」），別什麼都疊。</li>
+    <li><span class="tag-cons">【共識】</span>稀有度：<strong>傳奇（橘）</strong>原始屬性與詞綴上限最高；<strong>套裝（綠）</strong>要湊齊全套才划算。稀有度階序至少含 Rare → Legendary → Mythic。</li>
+    <li><span class="tag-cons">【共識・機制】</span><strong>Runeword</strong>：只有普通（common）<strong>三孔裝</strong>可插，賦予「其他職業的主動技能」；防具/武飾各有符文序列（上上上／上上下／上下下／下下下…）；插後變紫（Magic）不能精煉、但仍可鍛造。三孔裝在<strong>市場（Market）最容易買到</strong>。</li>
+    <li><span class="tag-solo">【個別玩家實測】</span>套裝效果案例：Lightning Mage <strong>4 件套 = 單體攻擊變 3 目標</strong>（約 3 倍傷）；Ballista Mercenary <strong>2 件套 = 傷害約翻倍</strong>。未見官方數據佐證。</li>
+    <li><span class="tag-cons">【共識】</span>強化四種：<strong>Forging</strong>（升數值）、<strong>Refining</strong>（Legendary→Mythic）、<strong>Corrupting</strong>（v1.0.4 後只有正面效果）、<strong>Embedding</strong>（Workshop 升級後才能鑲符文）。v1.0.6.2 起有「<strong>詞綴封印</strong>」可鎖住想要的詞綴。</li>
+    <li><span class="tag-solo">【個別玩家】</span>後期建議裝備 <strong>+30 以上</strong>、用 codex 密封詞綴組合、<strong>優先百分比屬性</strong>而非只堆套裝加成。</li>
+    <li><span class="tag-solo">【個別玩家】</span>稀有掉落：Cyrus 套裝手套、傳奇頭盔「Miser」極稀有，社群證實多從<strong>市場金庫（Market Vault）</strong>偶爾出現，玩家掉落感知落差大。</li>
+  </ul>
+</section>
+
+<section id="s6">
+  <h2><span class="no">VI</span>實用 Tips</h2>
+  <div class="tip trap"><span class="t">⚠ 新手最常踩的雷：Slime Rain 治療機制</span><span class="tag-cons">【共識】</span>Priest 的 <strong>Slime Rain 治療只會作用在「同一堆」單位</strong>——如果你混合近戰＋遠程站位，前排坦克會吃不到治療。<strong>解法：全遠程或全近戰堆在一起</strong>；混編隊就改用坦克輔助技（Hallucinatory Mist／Fortitude Elixir）或 Cleric 樹的 Light of Healing。</div>
+  <ul>
+    <li><span class="tag-cons">【共識】</span><strong>第 8 章「豬 Boss」</strong>是公認的第一個明顯進度牆。</li>
+    <li><span class="tag-cons">【共識】</span><strong>章節 5／10／15／20</strong> 是重要功能解鎖節點（<strong>第 10 章解鎖 Myth 神話裝</strong>），被指南稱為「master key」。</li>
+    <li><span class="tag-cons">【共識】</span>卡關檢查清單：① 裝備等級跟得上區域嗎 ② 建築是否頂到 Stele 上限 ③ 血/藍夠不夠 ④ build 是否克制敵人傷害屬性 ⑤ 傳奇角色是否真的配合戰術。</li>
+    <li><span class="tag-cons">【共識】</span>資源集中投「<strong>職業 Golem</strong>」在主力角色的職業上（增益會套用到該職業「全部」角色）。</li>
+    <li><span class="tag-solo">【個別玩家】</span>成就 <strong>Godslayer III</strong>（Doom Stage 3）最稀有（約 0.1%）：需滿裝 Myth＋Runewords＋Stele 拉滿＋主力 60–100 等。</li>
+    <li><span class="tag-solo">【玩家工具】</span>玩家 Solmyr 做了唯讀 <strong>Stats &amp; QoL Mod</strong>（讀戰鬥數據／物品過濾提示音／精確計時），GitHub 開源。</li>
+    <li><span class="tag-cons">【共識】</span>遊戲仍早期活躍開發：8 月連發 1.0.3–1.0.9 共 7 版，<strong>build 數值隨時可能被改動</strong>——這份攻略請定期對照最新討論串。</li>
+  </ul>
+</section>
+
+<section id="s7">
+  <h2><span class="no">VII</span>資料來源</h2>
+  <p class="lead">本攻略彙整自下列來源，並以「社群共識／個別玩家／未定論」分級呈現。遊戲新、資料會變，一切以遊戲內當前版本為準。</p>
+  <footer>
+  <h3>主要來源</h3>
+  <ul>
+    <li>Steam 商店頁：<a href="https://store.steampowered.com/app/4243990/">store.steampowered.com/app/4243990</a></li>
+    <li>Steam 討論區（共 501 串，實質攻略集中在少數串）：<a href="https://steamcommunity.com/app/4243990/discussions/">steamcommunity.com/app/4243990/discussions</a></li>
+    <li>Steam 指南區（8 篇，含 Beginner's Guide／3 Lightning Mages 速刷／Runeword Guide 等）：<a href="https://steamcommunity.com/app/4243990/guides/">steamcommunity.com/app/4243990/guides</a></li>
+    <li>玩家 wiki：<a href="https://oldgodsrising.wiki/">oldgodsrising.wiki</a></li>
+    <li>攻略站 Tier List：<a href="https://www.treyexgaming.com/path-of-idle-old-gods-rising-class-tier-list/">treyexgaming</a>、<a href="https://allthings.how/path-of-idle-old-gods-rising-classes-tier-list/">allthings.how</a>、<a href="https://www.destructoid.com/path-of-idle-old-gods-rising-class-tier-list/">destructoid</a></li>
+  </ul>
+  <p style="margin-top:16px;color:var(--faint)">整理：賈維斯 ／ 2026-08-28　·　情報分級標示，非官方定案　·　開發商連更 7 版，數值以遊戲內為準</p>
+  </footer>
+</section>
+
+</div>
+</body>
+</html>
