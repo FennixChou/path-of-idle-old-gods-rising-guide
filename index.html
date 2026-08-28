@@ -27,13 +27,12 @@ body{margin:0;background:
   color:var(--ink);
   font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
   line-height:1.8;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px 80px;}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 80px;}
 a{color:var(--eldritch);text-decoration:none;border-bottom:1px solid rgba(67,201,168,.3);}
 a:hover{color:#6fe0c4;}
-h1,h2,h3{font-family:"Cinzel",serif;line-height:1.25;text-wrap:balance;}
+h1,h2,h3,h4{font-family:"Cinzel",serif;line-height:1.25;text-wrap:balance;}
 .num{font-variant-numeric:tabular-nums}
 
-/* hero */
 header.hero{text-align:center;padding:74px 16px 40px;position:relative;}
 .eyebrow{font-family:"Cinzel",serif;letter-spacing:.34em;font-size:.72rem;color:var(--eldritch);
   text-transform:uppercase;margin-bottom:18px;}
@@ -44,12 +43,10 @@ h1{font-size:clamp(2rem,6vw,3.3rem);font-weight:700;margin:0 0 6px;color:#f0f3ef
 .metaline{margin-top:24px;font-size:.82rem;color:var(--faint);letter-spacing:.02em;}
 .metaline b{color:var(--muted);font-weight:500;}
 
-/* disclaimer */
 .warn{background:var(--blood-soft);border:1px solid rgba(207,75,75,.4);border-left-width:3px;
   border-radius:10px;padding:16px 20px;margin:30px 0 8px;font-size:.9rem;color:#eddede;}
 .warn b{color:var(--blood);}
 
-/* legend */
 .legend{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 6px;font-size:.78rem;}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:3px 11px;border-radius:999px;
   border:1px solid var(--line);white-space:nowrap;}
@@ -57,21 +54,19 @@ h1{font-size:clamp(2rem,6vw,3.3rem);font-weight:700;margin:0 0 6px;color:#f0f3ef
 .badge.solo{background:var(--gold-soft);border-color:var(--gold);color:var(--gold);}
 .badge.open{background:var(--amethyst-soft);border-color:var(--amethyst);color:var(--amethyst);}
 
-/* nav */
-nav.toc{position:sticky;top:0;z-index:5;background:rgba(10,13,17,.82);backdrop-filter:blur(8px);
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(10,13,17,.85);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);margin:40px -20px 0;padding:12px 20px;
-  display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-size:.82rem;}
+  display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-size:.8rem;}
 nav.toc a{color:var(--muted);border:none;}
 nav.toc a:hover{color:var(--eldritch);}
 
-/* sections */
 section{margin-top:52px;scroll-margin-top:60px;}
 h2{font-size:1.5rem;font-weight:600;color:#eef1ec;margin:0 0 4px;
   display:flex;align-items:center;gap:12px;}
 h2 .no{font-size:.9rem;color:var(--eldritch);border:1px solid var(--eldritch-dim);
   border-radius:8px;padding:2px 9px;font-family:"Cinzel",serif;}
 .lead{color:var(--muted);font-size:.96rem;margin:2px 0 20px;}
-h3{font-size:1.08rem;font-weight:600;color:var(--eldritch);margin:26px 0 8px;}
+h3{font-size:1.08rem;font-weight:600;color:var(--eldritch);margin:28px 0 8px;}
 p{margin:0 0 12px;}
 ul{margin:6px 0 14px;padding-left:22px;}
 li{margin:5px 0;}
@@ -80,7 +75,6 @@ strong{color:#f0f3ef;font-weight:700;}
 .tag-solo{color:var(--gold);font-size:.76rem;font-weight:700;}
 .tag-open{color:var(--amethyst);font-size:.76rem;font-weight:700;}
 
-/* class / tier cards */
 .tiergrid{display:grid;gap:12px;margin-top:16px;}
 .tier-row{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:stretch;}
 .tier-badge{display:flex;align-items:center;justify-content:center;font-family:"Cinzel",serif;
@@ -94,7 +88,6 @@ strong{color:#f0f3ef;font-weight:700;}
 .ccard .role{font-size:.78rem;color:var(--eldritch);margin-left:8px;letter-spacing:.04em;}
 .ccard p{margin:5px 0 0;font-size:.9rem;color:var(--muted);}
 
-/* comp cards */
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px;}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;}
 .card.hl{border-color:var(--eldritch-dim);box-shadow:0 0 24px rgba(67,201,168,.07);}
@@ -106,11 +99,24 @@ strong{color:#f0f3ef;font-weight:700;}
 .pill.mage{border-color:var(--amethyst);color:#c3aef0;}
 .pill.war{border-color:var(--s-tier);color:#f0a49e;}
 .pill.priest{border-color:var(--eldritch-dim);color:var(--eldritch);}
+.pill.cleric{border-color:var(--gold);color:#e0c987;}
 .card p{font-size:.88rem;color:var(--muted);margin:6px 0 0;}
 
-/* build table */
+/* build template */
+.build{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:14px;}
+.build .bhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;border-bottom:1px solid var(--line-soft);padding-bottom:8px;margin-bottom:10px;}
+.build .bname{font-family:"Cinzel",serif;font-weight:600;color:#eef1ec;font-size:1.05rem;}
+.build .bkind{font-size:.72rem;padding:2px 8px;border-radius:6px;background:var(--eldritch-soft);color:var(--eldritch);border:1px solid var(--eldritch-dim);}
+.build .bkind.easy{background:rgba(90,165,201,.12);color:var(--b-tier);border-color:rgba(90,165,201,.4);}
+.build .bkind.hard{background:var(--blood-soft);color:var(--blood);border-color:rgba(207,75,75,.4);}
+.build dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:.88rem;}
+.build dt{color:var(--faint);font-size:.78rem;white-space:nowrap;padding-top:2px;}
+.build dd{margin:0;color:var(--ink);}
+.build .sk{color:#c3aef0;} .build .ms{color:var(--eldritch);}
+.build .note{font-size:.82rem;color:var(--muted);margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);}
+
 .tablecard{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:14px;background:var(--panel);}
-table{border-collapse:collapse;width:100%;min-width:560px;font-size:.88rem;}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.87rem;}
 thead th{background:var(--panel-2);color:var(--muted);text-align:left;padding:11px 14px;
   font-size:.74rem;letter-spacing:.05em;font-weight:700;border-bottom:1px solid var(--line);font-family:"Cinzel",serif;}
 td{padding:10px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
@@ -118,18 +124,18 @@ tbody tr:last-child td{border-bottom:none;}
 tbody tr:hover{background:var(--eldritch-soft);}
 td b{color:#eef1ec;}
 
-/* callout */
 .tip{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--eldritch-dim);
   border-radius:8px;padding:13px 16px;margin:14px 0;font-size:.9rem;}
 .tip.trap{border-left-color:var(--blood);}
+.tip.fix{border-left-color:var(--gold);}
 .tip .t{font-weight:700;color:#eef1ec;display:block;margin-bottom:3px;}
-.tip.trap .t{color:var(--blood);}
+.tip.trap .t{color:var(--blood);} .tip.fix .t{color:var(--gold);}
 
 footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:var(--faint);font-size:.8rem;}
 footer h3{color:var(--muted);font-size:.92rem;margin:0 0 8px;}
 footer ul{padding-left:18px;}
 footer a{word-break:break-all;}
-@media(max-width:560px){header.hero{padding:52px 8px 30px} .tier-row{grid-template-columns:44px 1fr}}
+@media(max-width:560px){header.hero{padding:52px 8px 30px} .tier-row{grid-template-columns:44px 1fr} .build dl{grid-template-columns:1fr} .build dt{padding-top:8px}}
 </style>
 </head>
 <body>
@@ -138,171 +144,268 @@ footer a{word-break:break-all;}
 <header class="hero">
   <div class="eyebrow">Idle Auto-Battle · Party RPG · Lovecraftian</div>
   <h1>Path of Idle</h1>
-  <div class="zh">Old Gods Rising — 職業・隊伍・天賦・裝備 攻略</div>
+  <div class="zh">Old Gods Rising — 職業・隊伍・天賦・配置・裝備 完整攻略</div>
   <div class="rune">✦ ⛧ ✦</div>
-  <div class="metaline">整理日 <b>2026-08-28</b>　·　遊戲 2026-08-12 上市（開發 Small Mill）　·　彙整自 Steam 討論區／指南＋社群攻略站</div>
+  <div class="metaline">更新 <b>2026-08-28</b>　·　遊戲 2026-08-12 上市（開發 Small Mill）　·　彙整自 Steam 討論區／指南＋grandwiki 官方 build 資料庫＋社群攻略站</div>
 </header>
 
 <div class="warn">
-  <b>先讀這段：</b>這遊戲上市才 <b>16 天</b>、8 月內連更 7 個版本（1.0.3→1.0.9），社群仍小。沒有任何「官方認證最強 build」或多方驗證過的逐點配點/詞綴數值。本攻略把情報**分三級標示**，請把它當<b>起點</b>而非定案——數值隨改版隨時會變，帶看前（開玩前）建議自己再翻一次討論區最新串。
+  <b>先讀這段：</b>這遊戲上市才 <b>16 天</b>、8 月內連更 7 個版本（1.0.3→1.0.9），社群仍小。下面的「官方 build 模板」出自遊戲內建資料庫（grandwiki 整理），可信度高；但<b>沒有</b>任何來源給出 Blessing「6 點逐點分配數字」（版本改太快，連官方 wiki 都不發）。本攻略把情報<b>分三級標示</b>，請把它當<b>起點</b>而非定案——數值/機制隨改版會變，開玩前建議自己再對照遊戲內現況。
 </div>
 
 <div class="legend">
-  <span class="badge cons">● 社群共識</span>
+  <span class="badge cons">● 社群共識／官方資料</span>
   <span class="badge solo">● 個別玩家回報</span>
   <span class="badge open">● 未定論／有爭議</span>
-  <span style="color:var(--faint);align-self:center">— 每則情報都標了可信度來源</span>
 </div>
 
 <nav class="toc">
-  <a href="#s1">遊戲概述</a>
+  <a href="#s1">概述</a>
   <a href="#s2">職業＆Tier</a>
   <a href="#s3">隊伍搭配</a>
-  <a href="#s4">天賦流派</a>
-  <a href="#s5">裝備搭配</a>
-  <a href="#s6">實用Tips</a>
-  <a href="#s7">來源</a>
+  <a href="#s4">詳細天賦點法</a>
+  <a href="#s5">配置系統</a>
+  <a href="#s6">裝備搭配</a>
+  <a href="#s7">Tips</a>
+  <a href="#s8">來源</a>
 </nav>
 
 <section id="s1">
   <h2><span class="no">I</span>遊戲概述</h2>
-  <p class="lead">Lovecraft 黑暗奇幻題材的「掛機自動戰鬥 × 隊伍 RPG × 城鎮建設 × 裝備打造」，非 roguelike。</p>
-  <p><span class="tag-cons">【社群共識】</span>核心循環：招募「<strong>Godsworn</strong>」（被腐化的囚犯信徒）→ 培養、配裝、設定技能 → 編隊（一線 3 人、可開多條戰線）→ <strong>全自動戰鬥</strong>（可背景掛機）→ 推「Expedition」主線關卡撞難度牆 → 回城升級建築（Temple／Prison／Workshop／Market／Vault…）→ 用「Worshipper Infusion」把資源轉成永久帳號強度 → 循環變強。</p>
-  <p><strong>玩家介入集中在「戰前配置」</strong>，戰鬥本身無操作。前期主動性強（決定練誰、配什麼 build），後期漸偏純掛機。有玩過《流亡黯道 PoE》數值系統的人上手較快。</p>
-  <p>後期解鎖五種進階模式：<strong>Expedition</strong>（主線）、<strong>Exploration</strong>（多線平行刷獎勵）、<strong>Divine Tower</strong>（爬塔）、<strong>Alternate Dimension</strong> 與 <strong>Finality</strong>（終局）。<span class="tag-open">【未定論】</span>Finality 是否為真・無盡模式，社群尚無定論。</p>
+  <p class="lead">Lovecraft 黑暗奇幻的「掛機自動戰鬥 × 隊伍 RPG × 城鎮建設 × 裝備打造」，非 roguelike。</p>
+  <p><span class="tag-cons">【共識】</span>核心循環：招募「<strong>Godsworn</strong>」（被腐化的囚犯）→ 培養、配裝、設定技能 → 編隊（一線 3 人、可開多條戰線）→ <strong>全自動戰鬥</strong>（可背景掛機）→ 推「Expedition」關卡撞難度牆 → 回城升級建築（Temple／Prison／Workshop／Market／Vault…）→ 用「Worshipper Infusion」轉永久帳號強度 → 循環變強。<strong>玩家介入集中在「戰前配置」</strong>，戰鬥本身無操作。有玩過《流亡黯道 PoE》數值系統的人上手較快。</p>
+  <p>後期解鎖五種進階模式：<strong>Expedition</strong>（主線）、<strong>Exploration</strong>（多線刷獎勵）、<strong>Divine Tower</strong>（爬塔）、<strong>Alternate Dimension</strong> 與 <strong>Finality</strong>（終局）。<span class="tag-open">【未定論】</span>Finality 是否為真・無盡模式尚無定論。</p>
 </section>
 
 <section id="s2">
   <h2><span class="no">II</span>六職業 ＆ Tier List</h2>
-  <p class="lead">六職業經多來源交叉確認：Warrior／Cleric／Mage／Priest／Hunter／Mercenary。下方 Tier 為攻略站與指南作者排序收斂結果，<span class="tag-open">非社群票選、且與部分實戰玩家意見有張力（見下）</span>。</p>
+  <p class="lead">六職業經多來源交叉確認：Warrior／Cleric／Mage／Priest／Hunter／Mercenary。Tier 為攻略站/指南作者排序收斂，<span class="tag-open">非社群票選、且與部分實戰玩家意見有張力</span>。</p>
   <div class="tiergrid">
-    <div class="tier-row">
-      <div class="tier-badge tier-S">S</div>
-      <div class="tier-cards">
-        <div class="ccard"><span class="cn">Cleric</span><span class="role">輔助／續航</span><p>Buff 全隊傷害＋持續治療，被多篇攻略列為「必備輔助」。續航核心。</p></div>
-        <div class="ccard"><span class="cn">Warrior</span><span class="role">坦／近戰／召喚</span><p>可召喚額外單位，坦與輸出混合、容錯高，前中後期都站得住。</p></div>
-      </div>
-    </div>
-    <div class="tier-row">
-      <div class="tier-badge tier-A">A</div>
-      <div class="tier-cards">
-        <div class="ccard"><span class="cn">Mage</span><span class="role">遠程 AoE 主 DPS</span><p>元素範圍法傷、清圖最快的核心（見速刷隊）。需後排站位保護。</p></div>
-        <div class="ccard"><span class="cn">Priest</span><span class="role">近戰＋魔法混合</span><p>吃裝備、操作較複雜；純輔助（Totem/Slime）或輸出向（Bone Chill）皆可。實戰玩家常拿它取代 Cleric 當輔助位。</p></div>
-      </div>
-    </div>
-    <div class="tier-row">
-      <div class="tier-badge tier-B">B</div>
-      <div class="tier-cards">
-        <div class="ccard"><span class="cn">Hunter</span><span class="role">遠程物傷（前期強）</span><p>前期強勢、後期常被替換；狼召喚流有玩家認為偏弱。</p></div>
-        <div class="ccard"><span class="cn">Mercenary</span><span class="role">後期第三位選項</span><p>樣本不足未正式評級。Ballista 流單體 Boss DPS 高（玩家回報 20–30 萬）但無 AoE。</p></div>
-      </div>
-    </div>
+    <div class="tier-row"><div class="tier-badge tier-S">S</div><div class="tier-cards">
+      <div class="ccard"><span class="cn">Cleric</span><span class="role">輔助／續航</span><p>Buff 全隊＋持續治療，被列為「必備輔助」。</p></div>
+      <div class="ccard"><span class="cn">Warrior</span><span class="role">坦／近戰／召喚</span><p>可召喚額外單位，坦與輸出混合、容錯高。</p></div>
+    </div></div>
+    <div class="tier-row"><div class="tier-badge tier-A">A</div><div class="tier-cards">
+      <div class="ccard"><span class="cn">Mage</span><span class="role">遠程 AoE 主 DPS</span><p>元素範圍法傷、清圖最快（見速刷隊）。需後排站位。</p></div>
+      <div class="ccard"><span class="cn">Priest</span><span class="role">近戰＋魔法混合</span><p>吃裝備、操作較複雜；純輔助（Totem/Slime）或輸出向（Bone Chill）皆可。實戰玩家常拿它取代 Cleric 當輔助位。</p></div>
+    </div></div>
+    <div class="tier-row"><div class="tier-badge tier-B">B</div><div class="tier-cards">
+      <div class="ccard"><span class="cn">Hunter</span><span class="role">遠程物傷（前期強）</span><p>前期強、後期常被替換；狼召喚流有人認為偏弱。</p></div>
+      <div class="ccard"><span class="cn">Mercenary</span><span class="role">後期第三位選項</span><p>樣本不足未正式評級。Ballista 流單體 Boss DPS 高（玩家回報 20–30 萬）但無 AoE。</p></div>
+    </div></div>
   </div>
-  <div class="tip trap"><span class="t">⚠ 資料打架，誠實提醒</span>有一個攻略站給出完全不同的職業名單（出現 Shadowblade／Monk），與上述多方印證名單矛盾、疑為內容品質問題。<strong>Shadowblade／Monk 是否真實存在待查證</strong>；本表以六職業版本為準。</div>
+  <div class="tip trap"><span class="t">⚠ 資料打架</span>有攻略站給出不同職業名單（出現 Shadowblade／Monk），與多方印證名單矛盾、疑為內容品質問題。<strong>本表以六職業版本為準，Shadowblade／Monk 是否存在待查證。</strong></div>
 </section>
 
 <section id="s3">
   <h2><span class="no">III</span>隊伍搭配</h2>
-  <p class="lead">「一線 3 人」。下面分「速刷」與「平衡推進」兩派，並誠實標出社群的爭議點。</p>
+  <p class="lead">「一線 3 人」。先給 4 種主流骨架，再補討論區挖到的其他玩家搭配。</p>
   <div class="grid2">
     <div class="card hl">
-      <h3>⚡ 最速刷圖</h3>
-      <div class="sub"><span class="tag-cons">【社群共識】23–24 秒清圖</span></div>
+      <h3>⚡ 最速刷圖</h3><div class="sub"><span class="tag-cons">【共識】23–24 秒清圖</span></div>
       <div class="team"><span class="pill mage">Lightning Mage</span><span class="pill mage">Lightning Mage</span><span class="pill mage">Lightning Mage</span></div>
-      <p><strong>3× Lightning Storm Mage</strong> 是公認最快的 farming 組合，有玩家影片示範 23–24 秒清一張圖。前期版本可先用 <strong>2 Lightning Mage ＋ 1 Totem Priest</strong> 過渡（補生存）。</p>
+      <p><strong>3× Lightning Storm Mage</strong> 公認最速 farming（玩家影片 23–24 秒清圖）。前期可先 <strong>2 Lightning Mage ＋ 1 Totem Priest</strong> 過渡補生存。</p>
     </div>
     <div class="card">
-      <h3>🛡 平衡推進（主流三人組）</h3>
-      <div class="sub"><span class="tag-cons">【社群共識】最多獨立來源提及</span></div>
+      <h3>🛡 平衡推進（主流三人組）</h3><div class="sub"><span class="tag-cons">【共識】最多來源提及</span></div>
       <div class="team"><span class="pill war">Warrior</span><span class="pill mage">Lightning Mage</span><span class="pill priest">Priest</span></div>
-      <p><strong>Warrior（Blood Boil 或 Iron Guard）＋ Lightning Mage（主 AoE DPS）＋ Totem/Slime Priest（增益＋治療）</strong>。坦＋爆發＋續航齊全，是推關最泛用的骨架。</p>
+      <p><strong>Warrior（Blood Boil/Iron Guard）＋ Lightning Mage（主 AoE）＋ Totem/Slime Priest（增益＋治療）</strong>。坦＋爆發＋續航齊全，推關最泛用。</p>
     </div>
     <div class="card">
-      <h3>🌰 新手友善版</h3>
-      <div class="sub"><span class="tag-solo">【攻略站推薦】新手向</span></div>
-      <div class="team"><span class="pill priest">Cleric</span><span class="pill war">Warrior</span><span class="pill mage">Mage</span></div>
-      <p>SEO 攻略站普遍推 <strong>Cleric＋Warrior＋Mage</strong> 為新手首選（對應 Tier 表 S/S/A）。四平八穩、容錯高。</p>
+      <h3>🌰 新手友善版</h3><div class="sub"><span class="tag-solo">【攻略站推薦】</span></div>
+      <div class="team"><span class="pill cleric">Cleric</span><span class="pill war">Warrior</span><span class="pill mage">Mage</span></div>
+      <p>SEO 攻略站普遍推 <strong>Cleric＋Warrior＋Mage</strong>（對應 Tier S/S/A）。四平八穩、容錯高。</p>
     </div>
     <div class="card">
-      <h3>🎯 單體 Boss / 打樁</h3>
-      <div class="sub"><span class="tag-solo">【個別玩家】</span></div>
-      <div class="team"><span class="pill">Ballista Mercenary</span><span class="pill priest">Cleric</span><span class="pill">＋盾</span></div>
-      <p>後期（T17–19）Ballista Mercenary 配盾＋自動治療 Cleric，玩家回報可到 20–30 萬 DPS。無 AoE，專打單體。</p>
+      <h3>🎯 單體 Boss／打樁</h3><div class="sub"><span class="tag-solo">【個別玩家】</span></div>
+      <div class="team"><span class="pill">Ballista Mercenary</span><span class="pill cleric">Cleric</span><span class="pill">＋盾</span></div>
+      <p>後期（T17–19）Ballista Mercenary 配盾＋自動治療 Cleric，玩家回報 20–30 萬 DPS。無 AoE、專打單體。</p>
     </div>
   </div>
-  <div class="tip trap"><span class="t">⚠ 社群爭議：輔助位到底放 Cleric 還是 Priest？</span><span class="tag-open">【未定論】</span>一派玩家（Ssenkrad_II）稱 <strong>Priest-Mage-Warrior「輾壓一切」</strong>、認為 Cleric/Hunter 跟不上；SEO 攻略站則推 Cleric。甚至有玩家（Kuriboh）主張「這遊戲不需要治療、全力輸出就好」。<strong>結論：輔助位 Cleric vs Priest 沒有定案</strong>，看你的裝備進度與難度自行取捨。</div>
-</section>
 
-<section id="s4">
-  <h2><span class="no">IV</span>天賦點法／流派</h2>
-  <p class="lead"><span class="tag-open">【未定論】</span>沒有任何來源（含官方 wiki）願意發布逐點配點順序——理由是版本變動太快（1.0.1→1.0.9）。以下給「具名流派」與「配置系統」，配點細節請以遊戲內當前版本為準。</p>
-
-  <h3>各職業具名流派（流派名稱屬社群共識，非配點數值）</h3>
+  <h3>討論區挖到的其他搭配</h3>
+  <div class="tip"><span class="t">✦ 二次共識：Totem Priest 萬用支援結構</span><span class="tag-cons">【4+ 玩家獨立印證】</span>除 4 主流外，討論區最強的第二結構是「<strong>Totem Priest（純 buff）＝唯一支援 ＋ 任意 DPS ＋ 任意坦</strong>」。反覆出現的組合：召喚 Warrior 坦＋Ballista/Lightning DPS＋Totem Priest；Warrior 坦＋Totem Priest＋Bone Chill Priest（雙祭司，可打 20+ 高關）；Lightning Mage＋Totem Priest＋Summoner Hunter（推最快清圖）。</div>
   <div class="tablecard">
   <table>
-    <thead><tr><th>職業</th><th>主流流派</th><th>定位</th></tr></thead>
+    <thead><tr><th>搭配</th><th>用途</th><th>可信度</th></tr></thead>
     <tbody>
-      <tr><td><b>Warrior</b></td><td>Blood Boil（火傷/回血）、Iron Guard／Honor Guard（坦）、Archer Guard（物理輸出）</td><td>坦或混合輸出</td></tr>
-      <tr><td><b>Mage</b></td><td>Lightning（帶被動護盾，最泛用）、Fire</td><td>AoE 主 DPS</td></tr>
-      <tr><td><b>Priest</b></td><td>Slime／Totem（純輔助）、Bone Chill（輸出向，較難）</td><td>輔助或輸出</td></tr>
-      <tr><td><b>Cleric</b></td><td>Divine Punishment、Holy Bolt &amp; Heal、Mortan 套裝＋Divine Shelter（抗自傷）</td><td>輔助／續航</td></tr>
-      <tr><td><b>Hunter</b></td><td>Pierce、Wolf Hunter（坦獵混合）</td><td>前期物傷</td></tr>
-      <tr><td><b>Mercenary</b></td><td>Ballista（單體高 DPS）</td><td>後期單體</td></tr>
+      <tr><td><b>Slime/Totem Priest（純buff）＋雷法（冰盾）＋Blood Boil 戰士</b></td><td>終局橫掃</td><td><span class="tag-cons">多方共識</span></td></tr>
+      <tr><td><b>召喚隊 ＋ 另一輸出隊（雙線同跑）</b></td><td>前期性價比高（省天賦省裝），後期打不過純爆傷</td><td><span class="tag-cons">2 人共識</span></td></tr>
+      <tr><td>Mage＋Cleric（全 Aura 光環）＋Warrior</td><td>Cleric lvl16 全光環「pretty busted」</td><td><span class="tag-solo">個別</span></td></tr>
+      <tr><td>Hunter（閃避坦）＋Lightning Mage＋Ballista Merc</td><td>混合陣</td><td><span class="tag-solo">個別</span></td></tr>
+      <tr><td>1 Warrior（Iron Guard）＋2 Priest（Soul Reap）</td><td>省錢/低裝，第 5 章可用</td><td><span class="tag-solo">個別</span></td></tr>
+      <tr><td>單一 Warrior（Blood Boil/Archer Guard 混合）</td><td>DOOM 終局單體挑戰，戰士類最多成功回報</td><td><span class="tag-solo">個別（Warrior 類趨勢）</span></td></tr>
+      <tr><td>3× Warrior</td><td>理論速度可比 3× 雷法，但武器耐久掉更快</td><td><span class="tag-open">未證實</span></td></tr>
     </tbody>
   </table>
   </div>
+  <div class="tip trap"><span class="t">⚠ 社群爭議：輔助位放 Cleric 還是 Priest？</span><span class="tag-open">【未定論】</span>一派玩家稱 <strong>Priest-Mage-Warrior「輾壓一切」</strong>、認為 Cleric/Hunter 跟不上；攻略站則推 Cleric；甚至有玩家主張「不需要治療、全力輸出」。<strong>沒有定案</strong>，看裝備進度與難度自行取捨。</div>
+</section>
 
-  <h3>配置系統（怎麼調 build）<span class="tag-cons" style="font-weight:400"> 【社群共識・機制說明】</span></h3>
-  <ul>
-    <li><strong>天賦點（Blessing）</strong>：v1.0.5 起每 5 等給 1 點、上限 6 點、無隨機；可個別鎖定/解鎖、可整組重置（<strong>版本更新後建議重置重配</strong>）。</li>
-    <li><strong>Baptism（Temple）</strong>：專門用來「重 roll 主動技能」搭配被動做 build，高難度尤其吃這套；已鎖的技能會保留。</li>
-    <li><strong>Mutation 異變（跨職業主動技能）</strong>：傳奇/神話 Godsworn 用 Faith Skulls 合成 <strong>Crystallized Skulls</strong>，在 Sanctum 洗出別職業的主動技能（Stele 15 後傳奇自動得 1 個、神話最多 2 個）。</li>
-    <li><strong>Masteries 精通（跨職業被動，圓形天賦）</strong>：Temple 的 <strong>Inspire</strong> 功能（Stele 12 解鎖）洗入其他職業被動，用 Dark Stars／Void Stars（Stele 13+）移除不要的。</li>
-  </ul>
-  <div class="tip"><span class="t">✦ 通則（社群共識）</span><strong>專精 1–2 種傷害屬性、不要分散</strong>。火傷/召喚/暴擊三選一去疊，混在一起會互相稀釋。先看角色被動技能定方向，再用 Baptism 把主動技能洗到配合被動。</div>
+<section id="s4">
+  <h2><span class="no">IV</span>詳細天賦點法</h2>
+  <p class="lead">先講機制，再給各職「遊戲內建 build 模板」（技能／精通／屬性優先序／套裝／符文）。</p>
+  <div class="tip fix"><span class="t">✦ Blessing 天賦點怎麼來（機制・共識）</span>Blessing 不是「選哪條分支」，而是花 <strong>Ancient Blood（古血）</strong>把角色 Blessing 等級推到 <strong>5／10／15／20／25／30 六個里程碑，各解鎖 1 個天賦點＝每人上限 6 點</strong>。等級上限隨神殿(Temple)提升（Temple Lv20 → Blessing 可到 Lv50）。<span class="tag-open">目前查無正式 respec/重置機制</span>——但技能可用 Baptism 重 roll（見配置系統）。<strong>這 6 點要投進哪些技能/精通，就是下面模板在回答的。全網沒有「逐點數字」，官方模板給的是「該點哪些技能與精通」。</strong></div>
+
+  <h3>Mage — 雷電流（速刷核心）　<span class="tag-cons" style="font-weight:400">【grandwiki 官方模板】</span></h3>
+  <div class="build">
+    <div class="bhead"><span class="bname">Lightning Storm Build</span><span class="bkind">主流／輸出</span></div>
+    <dl>
+      <dt>主動技能</dt><dd class="sk">Lightning Storm・Storm Infusion・Lightning Shock・Brilliance Aura</dd>
+      <dt>精通(Mastery)</dt><dd class="ms">Thunder・Ruin・Scholar・Activate・Wisdom</dd>
+      <dt>屬性優先序</dt><dd>Dex ＞ Int ＞ 元素攻擊 ＞ 暴擊值 ＞ 元素/雷電傷害 ＞ 施法速度 ＞ 全技能速度 ＞ 施法命中 ＞ 法術傷害</dd>
+      <dt>套裝／符文</dt><dd>Heaven's Wrath 系；符文「Inspiration」(Ith-Sol-Fal → Aura of Lightning)</dd>
+    </dl>
+    <div class="note">核心玩法：疊 <strong>Spell Speed</strong> 縮短 Lightning Storm 攻擊間隔。</div>
+  </div>
+  <div class="build">
+    <div class="bhead"><span class="bname">Lightning Basic Attack Build</span><span class="bkind easy">速刷／易</span></div>
+    <dl>
+      <dt>主動技能</dt><dd class="sk">Lightning・Storm Infusion・Brilliance Aura</dd>
+      <dt>精通</dt><dd class="ms">Ruin・Thunder・Inspiration・Slow</dd>
+    </dl>
+    <div class="note">疊 Storm Infusion，靠 <strong>Kaelos's Verdict 4 件套讓 Lightning 打 3 個目標</strong>（≈3 倍 DPS）。<span class="tag-solo">玩家 Xanue：被動轉護盾只點 5 點就滿盾、現版本最強輸出（個別回報，多方印證 4 件套機制）。</span></div>
+  </div>
+
+  <h3>Warrior — 坦/混合　<span class="tag-cons" style="font-weight:400">【官方模板＋唯一玩家實貼配點】</span></h3>
+  <div class="build">
+    <div class="bhead"><span class="bname">Blood Boil Build</span><span class="bkind">防禦</span></div>
+    <dl>
+      <dt>主動技能</dt><dd class="sk">Vigilant Strike・Blood Boil・Motivational Warcry・Intimidating Warcry・Pain Immunity</dd>
+      <dt>精通</dt><dd class="ms">Unyielding・Toughness・Formation・Thunderous Roar・Shockwave・Brutish</dd>
+      <dt>屬性優先序</dt><dd>Str ＞ Dex ＞ 生命 ＞ 全防禦 ＞ 全速度 ＞ 全抗性</dd>
+      <dt>套裝</dt><dd>Kahn's Fate 系</dd>
+    </dl>
+    <div class="note">Vigilant Strike 疊 Mettle 延長 Blood Boil 持續。</div>
+  </div>
+  <div class="build">
+    <div class="bhead"><span class="bname">Archer Guard Build</span><span class="bkind easy">攻擊／易</span></div>
+    <dl>
+      <dt>主動技能</dt><dd class="sk">Archer Guard・Motivational Warcry・Cruel Hook</dd>
+      <dt>精通</dt><dd class="ms">Formation・Brutish・Brutality・Enrage・Thunderous Roar</dd>
+      <dt>套裝／符文</dt><dd>Bardo's 系；符文「Shockwave」(Tal-Ort-Tral → Strike Aura)</dd>
+    </dl>
+  </div>
+  <div class="tip"><span class="t">🎯 唯一有「逐技能等級」的玩家實貼（Bladewind，打 Doom，混合流）</span><span class="tag-solo">【個別玩家，未經他人驗證】</span>Archer Guard <b>10</b>／Formation <b>15</b>／Motivational Cry・Brutish・Enrage 各 <b>10</b>／Iron Guard <b>10</b>／Honor Guard <b>10</b>／Unyielding <b>15</b>（目標把承傷壓到 10% Max HP）／Vigilant Strike <b>1</b>（配 Enrage 疊 Mettle）／Brilliance Aura <b>1</b>（補魔）。另玩家 warman854 純 Blood Boil 流也能過 Doom（但要硬扛 68 層疲勞）。</div>
+
+  <h3>Priest — 輔助/輸出　<span class="tag-cons" style="font-weight:400">【官方模板】</span></h3>
+  <div class="grid2">
+    <div class="build">
+      <div class="bhead"><span class="bname">Totem Buff Build</span><span class="bkind">純輔助</span></div>
+      <dl>
+        <dt>技能</dt><dd class="sk">Vortex Totem・Windfury Totem・Flesh Offering</dd>
+        <dt>精通</dt><dd class="ms">Offering・Chill・Excitement・Instinct・Ritual</dd>
+        <dt>套/符文</dt><dd>Uruk's Devotion；符文 Defiance (Tral-Dol-Ko → Banner of Struggle)</dd>
+      </dl>
+    </div>
+    <div class="build">
+      <div class="bhead"><span class="bname">Slime Rain Build</span><span class="bkind">純輔助</span></div>
+      <dl>
+        <dt>技能</dt><dd class="sk">Soul Drain・Slime Rain・Fortitude Elixir・Hallucinatory Mist・Flesh Offering</dd>
+        <dt>精通</dt><dd class="ms">Coordination・Torrent・Chill・Ritual・Instinct</dd>
+        <dt>套裝</dt><dd>Vero's 系</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h3>Cleric — 新手隊輔助　<span class="tag-cons" style="font-weight:400">【官方模板】</span></h3>
+  <div class="build">
+    <div class="bhead"><span class="bname">Holy Light Buff Build</span><span class="bkind easy">防禦／易（對應新手輔助）</span></div>
+    <dl>
+      <dt>主動技能</dt><dd class="sk">Holy Bolt・Light of Healing・Aura of Focus・Aura of Flame・Aura of Lightning</dd>
+      <dt>精通</dt><dd class="ms">Radiance・Holy・Divinity・Barrier・Glitter</dd>
+      <dt>套裝</dt><dd>Faelen's 系</dd>
+    </dl>
+    <div class="note">Chastise 縮短 Holy Bolt 冷卻，頻放 Holy Bolt 同時治療＋屬性增益。<span class="tag-solo">（進階向另有 Sword of Divine Punishment 輸出模板，難度 Hard，靠疊 Aura 數縮 CD。）</span></div>
+  </div>
 </section>
 
 <section id="s5">
-  <h2><span class="no">V</span>裝備搭配</h2>
-  <p class="lead">框架原則為社群共識，具體詞綴數值多為個別玩家回報、隨改版變動。</p>
-  <ul>
-    <li><span class="tag-cons">【共識】</span><strong>一個 build 只鎖 1–2 個核心屬性</strong>（如召喚流只堆「召喚數＋召喚物存活」），別什麼都疊。</li>
-    <li><span class="tag-cons">【共識】</span>稀有度：<strong>傳奇（橘）</strong>原始屬性與詞綴上限最高；<strong>套裝（綠）</strong>要湊齊全套才划算。稀有度階序至少含 Rare → Legendary → Mythic。</li>
-    <li><span class="tag-cons">【共識・機制】</span><strong>Runeword</strong>：只有普通（common）<strong>三孔裝</strong>可插，賦予「其他職業的主動技能」；防具/武飾各有符文序列（上上上／上上下／上下下／下下下…）；插後變紫（Magic）不能精煉、但仍可鍛造。三孔裝在<strong>市場（Market）最容易買到</strong>。</li>
-    <li><span class="tag-solo">【個別玩家實測】</span>套裝效果案例：Lightning Mage <strong>4 件套 = 單體攻擊變 3 目標</strong>（約 3 倍傷）；Ballista Mercenary <strong>2 件套 = 傷害約翻倍</strong>。未見官方數據佐證。</li>
-    <li><span class="tag-cons">【共識】</span>強化四種：<strong>Forging</strong>（升數值）、<strong>Refining</strong>（Legendary→Mythic）、<strong>Corrupting</strong>（v1.0.4 後只有正面效果）、<strong>Embedding</strong>（Workshop 升級後才能鑲符文）。v1.0.6.2 起有「<strong>詞綴封印</strong>」可鎖住想要的詞綴。</li>
-    <li><span class="tag-solo">【個別玩家】</span>後期建議裝備 <strong>+30 以上</strong>、用 codex 密封詞綴組合、<strong>優先百分比屬性</strong>而非只堆套裝加成。</li>
-    <li><span class="tag-solo">【個別玩家】</span>稀有掉落：Cyrus 套裝手套、傳奇頭盔「Miser」極稀有，社群證實多從<strong>市場金庫（Market Vault）</strong>偶爾出現，玩家掉落感知落差大。</li>
-  </ul>
+  <h2><span class="no">V</span>配置系統（build 怎麼調）</h2>
+  <p class="lead">這是本作的深度所在——多數玩家練滿後樂趣就轉向「配置最佳化」。以下為機制事實（wiki／指南交叉），數字有版本落差處已標注。</p>
+  <div class="tablecard">
+  <table>
+    <thead><tr><th>系統</th><th>作用</th><th>要點</th></tr></thead>
+    <tbody>
+      <tr><td><b>Blessing<br>天賦點</b></td><td>提供 6 個天賦點（Lv5–30 里程碑）</td><td>耗古血；上限隨 Temple 升；查無 respec，但技能可用 Baptism 重 roll</td></tr>
+      <tr><td><b>Baptism<br>(神殿)</b></td><td>重 roll <b>主動技能</b>，搭配被動做 build</td><td>可「點鎖定/解鎖」個別技能避免被洗掉；<b>已鎖的保留、只有主動技能可 roll</b>；升級最多減費 50%</td></tr>
+      <tr><td><b>Mutation<br>異變</b></td><td>跨職業<b>主動技能</b>（帶別職一個技能）</td><td>限 Legendary/Mythic；Faith Skull → Sanctum 合成 <b>Crystallized Skull</b> 重 roll；傳奇 Stele15 得 1 個、神話 Stele20 可到 2 個<span class="tag-open">（wiki 標 Stele20／patch note 標 Floor18，有落差）</span></td></tr>
+      <tr><td><b>Masteries<br>精通</b></td><td>跨職業<b>被動</b>（圓形天賦）</td><td>神殿 <b>Inspire</b> 隨機獲得任一職一個被動（需 Stele12）；用 <b>Dark Star</b>（Void Star 合成）逐一移除不要的</td></tr>
+      <tr><td><b>Prison<br>監獄</b></td><td>洗信徒品質</td><td>Bewitch 收服；Torment 重 roll 主屬成長；<b>Warp 重 roll 品質/稀有度</b>（都影響 Sanity）；稀有/傳奇/神話機率靠 Stele 3/6/10 解鎖</td></tr>
+      <tr><td><b>Worshipper<br>／Golem</b></td><td>職業共用永久強化</td><td>每擊殺一次章節 Boss <b>該職業 max level +5</b>；資源集中投主力的職業</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip"><span class="t">✦ 通則（共識）</span>先看角色被動技能定方向 → 用 Baptism 把主動技能洗到配合被動 → <strong>專精 1–2 種傷害屬性、不要分散</strong>（火傷/召喚/暴擊三選一去疊，混在一起互相稀釋）。</div>
 </section>
 
 <section id="s6">
-  <h2><span class="no">VI</span>實用 Tips</h2>
-  <div class="tip trap"><span class="t">⚠ 新手最常踩的雷：Slime Rain 治療機制</span><span class="tag-cons">【共識】</span>Priest 的 <strong>Slime Rain 治療只會作用在「同一堆」單位</strong>——如果你混合近戰＋遠程站位，前排坦克會吃不到治療。<strong>解法：全遠程或全近戰堆在一起</strong>；混編隊就改用坦克輔助技（Hallucinatory Mist／Fortitude Elixir）或 Cleric 樹的 Light of Healing。</div>
+  <h2><span class="no">VI</span>裝備搭配</h2>
+  <p class="lead">框架原則為共識；套裝效果數字出自 grandwiki 逐頁查證。</p>
+  <div class="tip fix"><span class="t">✦ 修正三處（第一版攻略勘誤）</span><span class="tag-cons">已依 grandwiki 逐頁核對更正：</span>① Ballista 傷害翻倍是 <strong>4 件套</strong>（非 2 件套）；② Runeword 插入後「<strong>仍可鍛造 Forge、但不可再精煉 Refine</strong>」（「變紫 Magic」一說未能證實，已移除）；③ 原提「Miser 頭盔」<strong>查無此物、疑記錯，已刪</strong>。</div>
+
+  <h3>稀有度與 gearing 優先序</h3>
   <ul>
-    <li><span class="tag-cons">【共識】</span><strong>第 8 章「豬 Boss」</strong>是公認的第一個明顯進度牆。</li>
-    <li><span class="tag-cons">【共識】</span><strong>章節 5／10／15／20</strong> 是重要功能解鎖節點（<strong>第 10 章解鎖 Myth 神話裝</strong>），被指南稱為「master key」。</li>
-    <li><span class="tag-cons">【共識】</span>卡關檢查清單：① 裝備等級跟得上區域嗎 ② 建築是否頂到 Stele 上限 ③ 血/藍夠不夠 ④ build 是否克制敵人傷害屬性 ⑤ 傳奇角色是否真的配合戰術。</li>
-    <li><span class="tag-cons">【共識】</span>資源集中投「<strong>職業 Golem</strong>」在主力角色的職業上（增益會套用到該職業「全部」角色）。</li>
-    <li><span class="tag-solo">【個別玩家】</span>成就 <strong>Godslayer III</strong>（Doom Stage 3）最稀有（約 0.1%）：需滿裝 Myth＋Runewords＋Stele 拉滿＋主力 60–100 等。</li>
-    <li><span class="tag-solo">【玩家工具】</span>玩家 Solmyr 做了唯讀 <strong>Stats &amp; QoL Mod</strong>（讀戰鬥數據／物品過濾提示音／精確計時），GitHub 開源。</li>
-    <li><span class="tag-cons">【共識】</span>遊戲仍早期活躍開發：8 月連發 1.0.3–1.0.9 共 7 版，<strong>build 數值隨時可能被改動</strong>——這份攻略請定期對照最新討論串。</li>
+    <li><span class="tag-cons">【共識】</span>資料庫共 315 件（Set 90／Mythic 51／Legendary 82／Unique 34／Common 58）。實戰序：<strong>Normal/Fine/Rare 早期用完賣/分解 → Legendary（橘）中期主力 → Set（綠，需湊齊）→ Mythic（第 10 章解鎖＝終局標準）</strong>。Myth 裝每英雄有數量上限（遊戲會警告）。</li>
+    <li><span class="tag-cons">【共識】</span><strong>套裝優先於單純堆 % 屬性</strong>（達門檻前，有時值得犧牲些微屬性保住套裝效果）。</li>
+    <li><span class="tag-cons">【機制】</span>詞綴有 % 與固定值；詞綴上限隨物品等級升、<strong>Lv90 封頂</strong>。<strong>封印(Seal)</strong>靠「Awareness Levels」點數池鎖住想保留的詞綴（填經驗條提升）。</li>
+  </ul>
+
+  <h3>關鍵套裝效果（對應推薦職業）<span class="tag-cons" style="font-weight:400"> 【grandwiki 逐頁查證】</span></h3>
+  <div class="tablecard">
+  <table>
+    <thead><tr><th>套裝（職業）</th><th>2 件</th><th>4 件</th></tr></thead>
+    <tbody>
+      <tr><td><b>Kaelos's Verdict</b>（雷法）</td><td>Lightning 耗 10% 當前魔力、暴擊值加倍</td><td>獲 Storm Infusion 時 Lightning 打<b>最多 3 目標</b></td></tr>
+      <tr><td><b>Elaine's Command</b>（Ballista 傭兵）</td><td>Ballista Sentry 攻速 +50%、穿透 +1</td><td>對虛弱目標傷害 <b>+100%（翻倍）</b></td></tr>
+      <tr><td><b>Kahn's Fate</b>（Blood Boil 戰士）</td><td>Vigilant Strike 可疊 1 層 Mettle</td><td>每 2 層 Mettle 使 Blood Boil 延長 1 秒</td></tr>
+      <tr><td><b>Uruk's Devotion</b>（Totem 牧師）</td><td>放 Totem 時全隊 200% 敏捷護盾</td><td>每個啟動中 Totem 使 Buff 效果/持續 +30%</td></tr>
+      <tr><td><b>Mara's Ritual</b>（Bone Chill 祭司）</td><td>Bone Chill 冷卻 -30%、傷害 +50%</td><td>Death's Hand 命中 30% 機率觸發 Bone Chill</td></tr>
+      <tr><td><b>Blessing of Mortan</b>（牧師）</td><td>施 Divine Shelter 獲 50% 額外全防 5 秒</td><td>施放後 5 秒內 Blessed Strike 多打 2 目標、多治 2 隊友</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:.82rem;color:var(--faint);margin-top:8px">共 18 組具名套裝皆已逐頁取得 2/4 件數值（另 12 組含 Grim's Wrath／Bardo's Dominion／Vero's Secret 等，需要可補列）。</p>
+
+  <h3>Runeword（符文詞）</h3>
+  <ul>
+    <li><span class="tag-cons">【機制】</span>只有 <strong>Common 三孔裝</strong>（Fine 最多 2 孔）可插；賦予「其他職業的主動技能」。符文分攻擊（尖角朝上）/防禦（朝下）；共 <strong>24 符文、72 組配方（6 職業 × 12）</strong>；符文品質決定 Runeword 天賦等級（Common 1–2…Mythic 3–6 級）。</li>
+    <li><span class="tag-cons">【機制】</span>插入會<strong>消耗稀有符文</strong>；插後<strong>可 Forge、不可 Refine</strong>；Runeword 技能不可配天賦點、仍受原技能血/魔消耗限制。三孔裝在<strong>市場（Market）最容易買到</strong>。</li>
+  </ul>
+
+  <h3>強化與稀有裝</h3>
+  <ul>
+    <li><span class="tag-cons">【機制】</span><strong>Forging</strong>（升基礎數值，上限隨 Workshop 升）／<strong>Refining</strong>（Normal→Legendary、Magic→Set、Legendary→Mythic；<strong>失敗會摧毀裝備</strong>）／<strong>Corrupting</strong>（Stele 解鎖，目前版本所有結果皆為強化）。</li>
+    <li><span class="tag-cons">【機制】</span>稀有裝走 <strong>Market「Vault 金庫」</strong>（只能用符文兌換、需先買 1 件才刷新）；Warehouse 分級儲存（Legendary/Set Stele3、Unique Stele5、Mythic Stele11 解鎖）。Cyrus 手套＝Judgment of Cyrus 牧師套件。</li>
   </ul>
 </section>
 
 <section id="s7">
-  <h2><span class="no">VII</span>資料來源</h2>
-  <p class="lead">本攻略彙整自下列來源，並以「社群共識／個別玩家／未定論」分級呈現。遊戲新、資料會變，一切以遊戲內當前版本為準。</p>
+  <h2><span class="no">VII</span>實用 Tips</h2>
+  <div class="tip trap"><span class="t">⚠ 新手最常踩的雷：Slime Rain 治療機制</span><span class="tag-cons">【共識】</span>Priest 的 <strong>Slime Rain 治療只作用在「同一堆」單位</strong>——混合近戰＋遠程站位，前排坦克會吃不到治療。<strong>解法：全遠程或全近戰堆一起</strong>；混編隊改用坦克輔助技（Hallucinatory Mist／Fortitude Elixir）或 Cleric 樹的 Light of Healing（可透過 Mutation 異變取得，被稱「數一數二的坦補技」）。</div>
+  <ul>
+    <li><span class="tag-cons">【共識】</span><strong>第 8 章「豬 Boss」</strong>＝第一個明顯進度牆。</li>
+    <li><span class="tag-cons">【共識】</span><strong>章節 5／10／15／20</strong> 是重要功能解鎖節點（<strong>第 10 章解鎖 Myth 神話裝</strong>），被稱「master key」。</li>
+    <li><span class="tag-cons">【共識】</span>卡關檢查：① 裝備等級跟得上區域 ② 建築頂到 Stele 上限 ③ 血/藍夠不夠 ④ build 是否克制敵人傷害屬性 ⑤ 傳奇角色是否真的配合戰術。</li>
+    <li><span class="tag-solo">【個別玩家】</span>成就 <strong>Godslayer III</strong>（Doom Stage 3）最稀有（約 0.1%）：需滿裝 Myth＋Runewords＋Stele 拉滿＋主力 60–100 等。</li>
+    <li><span class="tag-solo">【玩家工具】</span>玩家 Solmyr 做了唯讀 <strong>Stats &amp; QoL Mod</strong>（讀戰鬥數據／物品過濾／精確計時），GitHub 開源。</li>
+    <li><span class="tag-cons">【共識】</span>遊戲仍早期活躍開發：8 月連發 1.0.3–1.0.9 共 7 版，<strong>build 數值隨時可能被改</strong>——這份請定期對照最新討論串。</li>
+  </ul>
+</section>
+
+<section id="s8">
+  <h2><span class="no">VIII</span>資料來源</h2>
+  <p class="lead">以「社群共識／官方資料／個別玩家／未定論」分級呈現。遊戲新、資料會變，一切以遊戲內當前版本為準。</p>
   <footer>
   <h3>主要來源</h3>
   <ul>
     <li>Steam 商店頁：<a href="https://store.steampowered.com/app/4243990/">store.steampowered.com/app/4243990</a></li>
-    <li>Steam 討論區（共 501 串，實質攻略集中在少數串）：<a href="https://steamcommunity.com/app/4243990/discussions/">steamcommunity.com/app/4243990/discussions</a></li>
-    <li>Steam 指南區（8 篇，含 Beginner's Guide／3 Lightning Mages 速刷／Runeword Guide 等）：<a href="https://steamcommunity.com/app/4243990/guides/">steamcommunity.com/app/4243990/guides</a></li>
-    <li>玩家 wiki：<a href="https://oldgodsrising.wiki/">oldgodsrising.wiki</a></li>
-    <li>攻略站 Tier List：<a href="https://www.treyexgaming.com/path-of-idle-old-gods-rising-class-tier-list/">treyexgaming</a>、<a href="https://allthings.how/path-of-idle-old-gods-rising-classes-tier-list/">allthings.how</a>、<a href="https://www.destructoid.com/path-of-idle-old-gods-rising-class-tier-list/">destructoid</a></li>
+    <li>Steam 討論區（501 串，實質攻略集中在少數串）：<a href="https://steamcommunity.com/app/4243990/discussions/">steamcommunity.com/app/4243990/discussions</a></li>
+    <li>Steam 指南區（8 篇：Beginner's Guide／3 Lightning Mages 速刷／Runeword Guide／Endgame 等）：<a href="https://steamcommunity.com/app/4243990/guides/">steamcommunity.com/app/4243990/guides</a></li>
+    <li><b>grandwiki 官方 build 資料庫</b>（23 個內建模板＋18 組套裝逐頁查證）：<a href="https://pathofidle.grandwiki.com/builds/">pathofidle.grandwiki.com</a></li>
+    <li>玩家 wiki：<a href="https://oldgodsrising.wiki/">oldgodsrising.wiki</a>　·　Tier List：<a href="https://www.treyexgaming.com/path-of-idle-old-gods-rising-class-tier-list/">treyexgaming</a>、<a href="https://allthings.how/path-of-idle-old-gods-rising-classes-tier-list/">allthings.how</a></li>
   </ul>
-  <p style="margin-top:16px;color:var(--faint)">整理：賈維斯 ／ 2026-08-28　·　情報分級標示，非官方定案　·　開發商連更 7 版，數值以遊戲內為準</p>
+  <p style="margin-top:16px;color:var(--faint)">整理：賈維斯 ／ 2026-08-28 更新　·　情報分級標示、非官方定案　·　官方模板給「該點哪些技能/精通」，全網無「6 點逐點數字」　·　開發商連更 7 版，數值以遊戲內為準</p>
   </footer>
 </section>
 
