@@ -365,7 +365,8 @@
 <footer class="dbfoot">
   <p>資料來源：<a href="https://pathofidle.grandwiki.com/zh-hant/" rel="noopener">grandwiki · Path of Idle 資料庫</a>　·　資料版本 <b>2026-08-18</b>（遊戲 1.0.6.2）</p>
   <p><b>非官方粉絲整理</b>，非遊戲官方發布；數值與機制隨改版可能變動，請以遊戲內現況為準。</p>
-  <p>頁面產生日期：2026-08-31　·　註：部分條目名與效果敘述沿用來源頁簡體字（忠實照抄）。</p>
+  <p>頁面產生日期：2026-08-31　·　技能成長表僅顯示 Lv.1 與 Lv.10（完整 1–10 級數據保留於來源資料）　·　註：部分條目名與效果敘述沿用來源頁簡體字（忠實照抄）。</p>
+  <p><b>機制數值均為 Lv.1 基準值，實戰隨等級與增傷變化</b>；「專精效果」為固定加成，不隨等級成長。</p>
 </footer>
 </div>
 <script>
@@ -405,13 +406,6 @@
       btns.forEach(function(o){if(o.getAttribute('data-k')===k)o.classList.toggle('on',o===b);});
       apply();
     });
-  });
-  var ex=document.getElementById('expandall');
-  if(ex)ex.addEventListener('click',function(){
-    var ds=document.querySelectorAll('details.lvl'),open=ex.getAttribute('data-open')!=='1';
-    for(var i=0;i<ds.length;i++)ds[i].open=open;
-    ex.setAttribute('data-open',open?'1':'0');
-    ex.textContent=open?'收合全部成長表':'展開全部成長表';
   });
   apply();
 })();

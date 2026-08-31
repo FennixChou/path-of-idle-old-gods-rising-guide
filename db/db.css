@@ -128,6 +128,21 @@ h1{font-size:clamp(1.6rem,4.6vw,2.5rem);font-weight:700;margin:0 0 6px;color:#f0
 .sec.hi h4{color:var(--qc);}
 ul.mech{margin:0;padding-left:17px;font-size:.83rem;color:var(--muted);}
 ul.mech li{margin:3px 0;}
+.sec h4 .lv1{margin-left:7px;font-size:.64rem;letter-spacing:.06em;color:var(--qc);
+  border:1px solid var(--line);border-radius:3px;padding:1px 5px;font-weight:600;
+  text-transform:none;vertical-align:1px;}
+.mech-kv{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:3px 12px;
+  margin:0;font-size:.83rem;}
+.mech-kv dt{color:var(--faint);white-space:normal;word-break:break-word;padding-top:1px;}
+.mech-kv dd{margin:0;min-width:0;word-break:break-word;color:var(--muted);}
+.mech-kv dd b{color:var(--qc);font-weight:700;font-variant-numeric:tabular-nums;}
+.mech-note{margin:6px 0 0;font-size:.78rem;color:var(--faint);line-height:1.55;}
+.sec h4 .vhint{display:block;margin-top:3px;font-size:.68rem;letter-spacing:0;
+  color:var(--faint);font-weight:400;text-transform:none;}
+.vsrc{margin:0 0 7px;font-size:.78rem;color:var(--muted);}
+.note .hint{display:block;margin-top:2px;color:var(--faint);opacity:.85;}
+.vsrc a{font-weight:600;}
+.sec.vsub{margin-top:9px;padding-top:7px;border-top:1px dotted var(--line-soft);}
 .sec.coef .tablecard{margin-top:4px;}
 .sec.coef td:first-child{white-space:nowrap;}
 ul.notes{font-size:.9rem;color:var(--muted);}
@@ -137,13 +152,9 @@ ul.notes{font-size:.9rem;color:var(--muted);}
 .src{display:inline-block;margin-top:11px;font-size:.72rem;color:var(--faint);border-bottom-color:transparent;}
 .src:hover{color:var(--eldritch);}
 
-/* details */
-details.lvl{margin-top:11px;padding-top:9px;border-top:1px solid var(--line-soft);}
-details.lvl summary{cursor:pointer;font-size:.76rem;color:var(--eldritch);list-style:none;
-  display:flex;align-items:center;gap:6px;}
-details.lvl summary::-webkit-details-marker{display:none}
-details.lvl summary::before{content:"▸";font-size:.8rem;transition:.15s;}
-details.lvl[open] summary::before{content:"▾";}
+/* skill level table */
+.sec.lvl .tablecard{margin-top:4px;}
+.sec.lvl td:first-child{white-space:nowrap;}
 
 /* tables */
 .tablecard{overflow-x:auto;border:1px solid var(--line);border-radius:9px;background:var(--void-2);margin-top:8px;
@@ -231,4 +242,11 @@ ol.runes .rsk,ol.runes .rl{font-size:.7rem;color:var(--muted);border:1px solid v
   .card{padding:13px 13px 11px;}
   .ico{width:40px;height:40px;}
   .qres .rt{margin-left:0;}
+  /* 窄screen：計數另起一行、標籤列可完整換行，避免 toolbar 撐寬被 overflow-x:hidden 切掉 */
+  .toolbar{padding:11px 12px;}
+  .searchrow{gap:7px;}
+  .toolbar input[type=search]{flex:1 1 100%;width:100%;}
+  .cnt{flex:1 1 100%;white-space:normal;}
+  .frow{gap:5px;}
+  .fbtn{padding:3px 9px;}
 }

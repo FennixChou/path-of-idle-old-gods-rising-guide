@@ -48,7 +48,6 @@
 <button class="fbtn" data-k="tags" data-v="輔助">輔助</button>
 </div>
 </div>
-<div class="tools2"><button id="expandall" class="fbtn" data-open="0" type="button">展開全部成長表</button></div>
 <section class="grp" data-group><h2>基礎技能 <span class="n">3</span></h2><div class="grid"><article class="card sk c-mag" id="sk-fireball" data-card data-cat="base" data-tags="法術|基礎" data-s="爆裂火球 fireball 法術 基礎 發出不穩定的火球，擊中敵人爆炸，造成火焰傷害，必定命中。 必定命中 fireball">
 <header class="ch">
 <img class="ico" src="icons/talent_301101.png" alt="" width="46" height="46" loading="lazy">
@@ -56,13 +55,15 @@
 <div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">法術</span><span class="chip tg">基礎</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>匕首 法典</dd><dt>冷卻時間</dt><dd>1.3 s</dd><dt>施放距離</dt><dd>3.2 m</dd></dl>
 <p class="desc">發出不穩定的火球，擊中敵人爆炸，造成火焰傷害，必定命中。 必定命中</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：3</li><li>火焰傷害：35%元素攻擊</li><li>必定命中</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>35%元素攻擊</td><td>58%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.3</td></tr><tr><td>Lv.2</td><td>1.3</td></tr><tr><td>Lv.3</td><td>1.3</td></tr><tr><td>Lv.4</td><td>1.3</td></tr><tr><td>Lv.5</td><td>1.3</td></tr><tr><td>Lv.6</td><td>1.3</td></tr><tr><td>Lv.7</td><td>1.3</td></tr><tr><td>Lv.8</td><td>1.3</td></tr><tr><td>Lv.9</td><td>1.3</td></tr><tr><td>Lv.10</td><td>1.3</td></tr></tbody></table></div></details>
-<div class="sec var"><h4>變體形態</h4>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>3</b></dd><dt>火焰傷害</dt><dd><b>35%元素攻擊</b></dd></dl><p class="mech-note">必定命中</p></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>35%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.3</td></tr><tr><td>Lv.10</td><td>1.3</td></tr></tbody></table></div></div>
+<div class="sec var"><h4>變體形態<span class="vhint">由裝備詞綴授予：穿戴帶對應詞綴的裝備自動生效，無手動切換</span></h4>
+<p class="vsrc">變體來源：<a href="equipment.html#eq-spectral-tome">鬼靈之書</a></p>
 <div class="chips"><span class="chip tg">法術</span><span class="chip tg">基礎</span></div>
 <p class="desc">發出陰森的鬼火，擊中敵人爆炸，造成火焰傷害和冰霜傷害，必定命中。</p>
-<ul class="mech"><li>擊中數量：3</li><li>火焰傷害：20%元素攻擊</li><li>冰霜傷害：20%元素攻擊</li><li>必定命中</li></ul>
+<div class="sec mech vsub"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>3</b></dd><dt>火焰傷害</dt><dd><b>20%元素攻擊</b></dd><dt>冰霜傷害</dt><dd><b>20%元素攻擊</b></dd></dl><p class="mech-note">必定命中</p></div>
+
 <p class="note">等級數值與基礎形態相同。</p>
 </div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/fireball/" rel="noopener">grandwiki 原頁 ↗</a>
@@ -74,9 +75,9 @@
 <div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">戰技</span><span class="chip tg">基礎</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>冷卻時間</dt><dd>1.2 s</dd><dt>施放距離</dt><dd>1.4 m</dd></dl>
 <p class="desc">爆發冰霜對多個目標造成冰霜傷害，自身獲得冰霜抗性。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：3</li><li>冰霜傷害：35%元素攻擊</li><li>冰霜抗性提升：10% （持續3秒）</li><li>（持續3秒）</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>35%元素攻擊</td><td>58%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.2</td></tr><tr><td>Lv.2</td><td>1.2</td></tr><tr><td>Lv.3</td><td>1.2</td></tr><tr><td>Lv.4</td><td>1.2</td></tr><tr><td>Lv.5</td><td>1.2</td></tr><tr><td>Lv.6</td><td>1.2</td></tr><tr><td>Lv.7</td><td>1.2</td></tr><tr><td>Lv.8</td><td>1.2</td></tr><tr><td>Lv.9</td><td>1.2</td></tr><tr><td>Lv.10</td><td>1.2</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>3</b></dd><dt>冰霜傷害</dt><dd><b>35%元素攻擊</b></dd><dt>冰霜抗性提升</dt><dd><b>10% （持續3秒）</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>35%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.2</td></tr><tr><td>Lv.10</td><td>1.2</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/ice-spike/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-lightning" data-card data-cat="base" data-tags="法術|基礎" data-s="閃電術 lightning 法術 基礎 降下閃電攻擊隨機目標，造成閃電傷害，有幾率驅散目標增益效果。 驅散幾率：25% lightning">
@@ -86,9 +87,9 @@
 <div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">法術</span><span class="chip tg">基礎</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>匕首 法典</dd><dt>冷卻時間</dt><dd>1.2 s</dd><dt>施放距離</dt><dd>4 m</dd></dl>
 <p class="desc">降下閃電攻擊隨機目標，造成閃電傷害，有幾率驅散目標增益效果。 驅散幾率：25%</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：1</li><li>閃電傷害：80%元素攻擊</li><li>驅散幾率：25%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>80%元素攻擊</td><td>132%元素攻擊</td><td>204%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.2</td></tr><tr><td>Lv.2</td><td>1.2</td></tr><tr><td>Lv.3</td><td>1.2</td></tr><tr><td>Lv.4</td><td>1.2</td></tr><tr><td>Lv.5</td><td>1.2</td></tr><tr><td>Lv.6</td><td>1.2</td></tr><tr><td>Lv.7</td><td>1.2</td></tr><tr><td>Lv.8</td><td>1.2</td></tr><tr><td>Lv.9</td><td>1.2</td></tr><tr><td>Lv.10</td><td>1.2</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>1</b></dd><dt>閃電傷害</dt><dd><b>80%元素攻擊</b></dd><dt>驅散幾率</dt><dd><b>25%</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>80%元素攻擊</td><td>204%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.2</td></tr><tr><td>Lv.10</td><td>1.2</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/lightning/" rel="noopener">grandwiki 原頁 ↗</a>
 </article></div></section>
 <section class="grp" data-group><h2>天賦技能 <span class="n">12</span></h2><div class="grid"><article class="card sk c-mag" id="sk-blizzard" data-card data-cat="talent" data-tags="法術|輔助|異常" data-s="暴風雪 blizzard 法術 輔助 異常 持續降下多發冰錐，造成冰霜傷害，有幾率施加緩速。 blizzard">
@@ -98,13 +99,15 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">異常</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>140</dd><dt>冷卻時間</dt><dd>10 s</dd><dt>施放距離</dt><dd>4.2 m</dd></dl>
 <p class="desc">持續降下多發冰錐，造成冰霜傷害，有幾率施加緩速。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>冰錐數量：20</li><li>擊中數量：1</li><li>冰霜傷害：30%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>30%元素攻擊</td><td>49%元素攻擊</td><td>76%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>10</td><td>140</td></tr><tr><td>Lv.2</td><td>10</td><td>180</td></tr><tr><td>Lv.3</td><td>10</td><td>220</td></tr><tr><td>Lv.4</td><td>10</td><td>270</td></tr><tr><td>Lv.5</td><td>10</td><td>310</td></tr><tr><td>Lv.6</td><td>10</td><td>360</td></tr><tr><td>Lv.7</td><td>10</td><td>400</td></tr><tr><td>Lv.8</td><td>10</td><td>450</td></tr><tr><td>Lv.9</td><td>10</td><td>500</td></tr><tr><td>Lv.10</td><td>10</td><td>550</td></tr></tbody></table></div></details>
-<div class="sec var"><h4>變體形態</h4>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>冰錐數量</dt><dd><b>20</b></dd><dt>擊中數量</dt><dd><b>1</b></dd><dt>冰霜傷害</dt><dd><b>30%元素攻擊</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>30%元素攻擊</td><td>76%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>10</td><td>140</td></tr><tr><td>Lv.10</td><td>10</td><td>550</td></tr></tbody></table></div></div>
+<div class="sec var"><h4>變體形態<span class="vhint">由裝備詞綴授予：穿戴帶對應詞綴的裝備自動生效，無手動切換</span></h4>
+<p class="vsrc">變體來源：<a href="equipment.html#eq-king-s-ring">國王之戒</a></p>
 <div class="chips"><span class="chip tg">法術</span><span class="chip tg">輔助</span></div>
 <p class="desc">持續降下多發冰錐，造成冰霜傷害。</p>
-<ul class="mech"><li>冰錐數量：26</li><li>擊中數量：1</li><li>冰霜傷害：30%元素攻擊</li></ul>
+<div class="sec mech vsub"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>冰錐數量</dt><dd><b>26</b></dd><dt>擊中數量</dt><dd><b>1</b></dd><dt>冰霜傷害</dt><dd><b>30%元素攻擊</b></dd></dl></div>
+
 <p class="note">等級數值與基礎形態相同。</p>
 </div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/blizzard/" rel="noopener">grandwiki 原頁 ↗</a>
@@ -116,12 +119,14 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>冷卻時間</dt><dd>0 s</dd><dt>施放距離</dt><dd>9 m</dd></dl>
 <p class="desc">所有友方獲得魔力再生提升和增益時間提升。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>增益時間提升：10%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>魔力保留</th></tr></thead><tbody><tr><td>Lv.1</td><td>25</td></tr><tr><td>Lv.2</td><td>27</td></tr><tr><td>Lv.3</td><td>28</td></tr><tr><td>Lv.4</td><td>30</td></tr><tr><td>Lv.5</td><td>31</td></tr><tr><td>Lv.6</td><td>32</td></tr><tr><td>Lv.7</td><td>33</td></tr><tr><td>Lv.8</td><td>34</td></tr><tr><td>Lv.9</td><td>35</td></tr><tr><td>Lv.10</td><td>35</td></tr></tbody></table></div></details>
-<div class="sec var"><h4>變體形態</h4>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>增益時間提升</dt><dd><b>10%</b></dd></dl></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>魔力保留</th></tr></thead><tbody><tr><td>Lv.1</td><td>25</td></tr><tr><td>Lv.10</td><td>35</td></tr></tbody></table></div><p class="note">來源僅提供保留量成長，未公開效果成長係數。</p></div>
+<div class="sec var"><h4>變體形態<span class="vhint">由裝備詞綴授予：穿戴帶對應詞綴的裝備自動生效，無手動切換</span></h4>
+<p class="vsrc">變體來源：<a href="equipment.html#eq-shining-robe">閃耀之袍</a></p>
 <div class="chips"><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div>
 <p class="desc">所有友方獲得魔力再生提升和法術精準提升。</p>
-<ul class="mech"><li>法術精準提升：10%</li></ul>
+<div class="sec mech vsub"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>法術精準提升</dt><dd><b>10%</b></dd></dl></div>
+
 <p class="note">等級數值與基礎形態相同。</p>
 </div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/brilliance-aura/" rel="noopener">grandwiki 原頁 ↗</a>
@@ -133,9 +138,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">削弱</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>168</dd><dt>冷卻時間</dt><dd>12 s</dd><dt>施放距離</dt><dd>4.2 m</dd></dl>
 <p class="desc">詛咒區域內的目標，造成少量冰霜傷害，並降低冰霜抗性和法術速度。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：5</li><li>冰霜傷害：40%元素攻擊</li><li>冰霜抗性降低：15% （持續5秒）</li><li>（持續5秒）</li><li>法術速度降低：10%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>40%元素攻擊</td><td>66%元素攻擊</td><td>102%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>12</td><td>168</td></tr><tr><td>Lv.2</td><td>12</td><td>216</td></tr><tr><td>Lv.3</td><td>12</td><td>264</td></tr><tr><td>Lv.4</td><td>12</td><td>324</td></tr><tr><td>Lv.5</td><td>12</td><td>372</td></tr><tr><td>Lv.6</td><td>12</td><td>432</td></tr><tr><td>Lv.7</td><td>12</td><td>480</td></tr><tr><td>Lv.8</td><td>12</td><td>540</td></tr><tr><td>Lv.9</td><td>12</td><td>600</td></tr><tr><td>Lv.10</td><td>12</td><td>660</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>5</b></dd><dt>冰霜傷害</dt><dd><b>40%元素攻擊</b></dd><dt>冰霜抗性降低</dt><dd><b>15% （持續5秒）</b></dd><dt>法術速度降低</dt><dd><b>10%</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>冰霜傷害</td><td>40%元素攻擊</td><td>102%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>12</td><td>168</td></tr><tr><td>Lv.10</td><td>12</td><td>660</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/frost-touch/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-glacial-spikes" data-card data-cat="talent" data-tags="戰技|精通" data-s="冰川之刺 glacial spikes 戰技 精通 從地面连续突出多個冰霜尖刺，造成穿刺和冰霜傷害，并基于冰霜抗性提升暴擊傷害。 glacial-spikes">
@@ -145,9 +150,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">精通</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>匕首 長杖</dd><dt>魔力消耗</dt><dd>98</dd><dt>冷卻時間</dt><dd>7 s</dd><dt>施放距離</dt><dd>2 m</dd></dl>
 <p class="desc">從地面连续突出多個冰霜尖刺，造成穿刺和冰霜傷害，并基于冰霜抗性提升暴擊傷害。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>穿刺傷害：150%智力</li><li>冰霜傷害：90%元素攻擊</li><li>暴擊傷害提升：3% 隨目前配置變化</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>穿刺傷害</td><td>150%智力</td><td>247%智力</td><td>382%智力</td></tr><tr><td>冰霜傷害</td><td>90%元素攻擊</td><td>148%元素攻擊</td><td>229%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>7</td><td>98</td></tr><tr><td>Lv.2</td><td>7</td><td>126</td></tr><tr><td>Lv.3</td><td>7</td><td>154</td></tr><tr><td>Lv.4</td><td>7</td><td>189</td></tr><tr><td>Lv.5</td><td>7</td><td>217</td></tr><tr><td>Lv.6</td><td>7</td><td>252</td></tr><tr><td>Lv.7</td><td>7</td><td>280</td></tr><tr><td>Lv.8</td><td>7</td><td>315</td></tr><tr><td>Lv.9</td><td>7</td><td>350</td></tr><tr><td>Lv.10</td><td>7</td><td>385</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>4</b></dd><dt>穿刺傷害</dt><dd><b>150%智力</b></dd><dt>冰霜傷害</dt><dd><b>90%元素攻擊</b></dd><dt>暴擊傷害提升</dt><dd><b>3% 隨目前配置變化</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>穿刺傷害</td><td>150%智力</td><td>382%智力</td></tr><tr><td>冰霜傷害</td><td>90%元素攻擊</td><td>229%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>7</td><td>98</td></tr><tr><td>Lv.10</td><td>7</td><td>385</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/glacial-spikes/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-ice-barrier" data-card data-cat="talent" data-tags="法術|支援|增益" data-s="寒冰護體 ice barrier 法術 支援 增益 為最前方友方施加護盾，并提升元素抗性。 ice-barrier">
@@ -157,9 +162,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">支援</span><span class="chip tg">增益</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>魔力消耗</dt><dd>140</dd><dt>冷卻時間</dt><dd>10 s</dd><dt>施放距離</dt><dd>4.5 m</dd></dl>
 <p class="desc">為最前方友方施加護盾，并提升元素抗性。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>護盾充能：200%元素防禦</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>護盾充能</td><td>200%元素防禦</td><td>330%元素防禦</td><td>510%元素防禦</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>10</td><td>140</td></tr><tr><td>Lv.2</td><td>10</td><td>180</td></tr><tr><td>Lv.3</td><td>10</td><td>220</td></tr><tr><td>Lv.4</td><td>10</td><td>270</td></tr><tr><td>Lv.5</td><td>10</td><td>310</td></tr><tr><td>Lv.6</td><td>10</td><td>360</td></tr><tr><td>Lv.7</td><td>10</td><td>400</td></tr><tr><td>Lv.8</td><td>10</td><td>450</td></tr><tr><td>Lv.9</td><td>10</td><td>500</td></tr><tr><td>Lv.10</td><td>10</td><td>550</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>護盾充能</dt><dd><b>200%元素防禦</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>護盾充能</td><td>200%元素防禦</td><td>510%元素防禦</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>10</td><td>140</td></tr><tr><td>Lv.10</td><td>10</td><td>550</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/ice-barrier/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-lightning-shock" data-card data-cat="talent" data-tags="法術|精通" data-s="閃電衝擊 lightning shock 法術 精通 在目標位置範圍爆發閃電，造成擊打和閃電傷害。 lightning-shock">
@@ -169,13 +174,15 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>12</dd><dt>冷卻時間</dt><dd>5 s</dd><dt>施放距離</dt><dd>4 m</dd></dl>
 <p class="desc">在目標位置範圍爆發閃電，造成擊打和閃電傷害。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：5</li><li>擊打傷害：50%元素攻擊</li><li>閃電傷害：18%魔力</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>50%元素攻擊</td><td>82%元素攻擊</td><td>127%元素攻擊</td></tr><tr><td>閃電傷害</td><td>18%魔力</td><td>30%魔力</td><td>46%魔力</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>12</td></tr><tr><td>Lv.2</td><td>5</td><td>12</td></tr><tr><td>Lv.3</td><td>5</td><td>12</td></tr><tr><td>Lv.4</td><td>5</td><td>12</td></tr><tr><td>Lv.5</td><td>5</td><td>12</td></tr><tr><td>Lv.6</td><td>5</td><td>12</td></tr><tr><td>Lv.7</td><td>5</td><td>12</td></tr><tr><td>Lv.8</td><td>5</td><td>12</td></tr><tr><td>Lv.9</td><td>5</td><td>12</td></tr><tr><td>Lv.10</td><td>5</td><td>12</td></tr></tbody></table></div></details>
-<div class="sec var"><h4>變體形態</h4>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>5</b></dd><dt>擊打傷害</dt><dd><b>50%元素攻擊</b></dd><dt>閃電傷害</dt><dd><b>18%魔力</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>50%元素攻擊</td><td>127%元素攻擊</td></tr><tr><td>閃電傷害</td><td>18%魔力</td><td>46%魔力</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>12</td></tr><tr><td>Lv.10</td><td>5</td><td>12</td></tr></tbody></table></div></div>
+<div class="sec var"><h4>變體形態<span class="vhint">由裝備詞綴授予：穿戴帶對應詞綴的裝備自動生效，無手動切換</span></h4>
+<p class="vsrc">變體來源：<a href="equipment.html#eq-ritual-mask">儀式面罩</a></p>
 <div class="chips"><span class="chip tg">法術</span><span class="chip tg">精通</span></div>
 <p class="desc">在目標位置範圍爆發閃電，造成擊打和閃電傷害，並驅散目標。</p>
-<ul class="mech"><li>擊中數量：5</li><li>擊打傷害：35%元素攻擊</li><li>閃電傷害：10%魔力</li><li>驅散</li></ul>
+<div class="sec mech vsub"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>5</b></dd><dt>擊打傷害</dt><dd><b>35%元素攻擊</b></dd><dt>閃電傷害</dt><dd><b>10%魔力</b></dd></dl><p class="mech-note">驅散</p></div>
+
 <p class="note">等級數值與基礎形態相同。</p>
 </div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/lightning-shock/" rel="noopener">grandwiki 原頁 ↗</a>
@@ -187,9 +194,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>匕首 長杖 法典</dd><dt>魔力消耗</dt><dd>210</dd><dt>冷卻時間</dt><dd>15 s</dd><dt>施放距離</dt><dd>4.8 m</dd></dl>
 <p class="desc">持續降下閃電攻擊目標，攻擊間隔受法術速度加成。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>持續時間：10秒</li><li>攻擊間隔：0.5 秒</li><li>擊中數量：1</li><li>閃電傷害：40%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>40%元素攻擊</td><td>66%元素攻擊</td><td>102%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>15</td><td>210</td></tr><tr><td>Lv.2</td><td>15</td><td>270</td></tr><tr><td>Lv.3</td><td>15</td><td>330</td></tr><tr><td>Lv.4</td><td>15</td><td>405</td></tr><tr><td>Lv.5</td><td>15</td><td>465</td></tr><tr><td>Lv.6</td><td>15</td><td>540</td></tr><tr><td>Lv.7</td><td>15</td><td>600</td></tr><tr><td>Lv.8</td><td>15</td><td>675</td></tr><tr><td>Lv.9</td><td>15</td><td>750</td></tr><tr><td>Lv.10</td><td>15</td><td>825</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>持續時間</dt><dd><b>10秒</b></dd><dt>攻擊間隔</dt><dd><b>0.5 秒</b></dd><dt>擊中數量</dt><dd><b>1</b></dd><dt>閃電傷害</dt><dd><b>40%元素攻擊</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>40%元素攻擊</td><td>102%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>15</td><td>210</td></tr><tr><td>Lv.10</td><td>15</td><td>825</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/lightning-storm/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-meteor-strike" data-card data-cat="talent" data-tags="法術|精通" data-s="隕石轟擊 meteor strike 法術 精通 召喚一顆巨大的隕石從天而降，造成擊打傷害和火焰傷害，法術傷害對此技能加成翻倍。 法術傷害加成翻倍 meteor-strike">
@@ -199,9 +206,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>匕首 法典</dd><dt>魔力消耗</dt><dd>70</dd><dt>冷卻時間</dt><dd>5 s</dd><dt>施放距離</dt><dd>3.6 m</dd></dl>
 <p class="desc">召喚一顆巨大的隕石從天而降，造成擊打傷害和火焰傷害，法術傷害對此技能加成翻倍。 法術傷害加成翻倍</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>擊打傷害：50%元素攻擊</li><li>火焰傷害：140%智力</li><li>法術傷害加成翻倍</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>50%元素攻擊</td><td>82%元素攻擊</td><td>127%元素攻擊</td></tr><tr><td>火焰傷害</td><td>140%智力</td><td>231%智力</td><td>357%智力</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>70</td></tr><tr><td>Lv.2</td><td>5</td><td>90</td></tr><tr><td>Lv.3</td><td>5</td><td>110</td></tr><tr><td>Lv.4</td><td>5</td><td>135</td></tr><tr><td>Lv.5</td><td>5</td><td>155</td></tr><tr><td>Lv.6</td><td>5</td><td>180</td></tr><tr><td>Lv.7</td><td>5</td><td>200</td></tr><tr><td>Lv.8</td><td>5</td><td>225</td></tr><tr><td>Lv.9</td><td>5</td><td>250</td></tr><tr><td>Lv.10</td><td>5</td><td>275</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>4</b></dd><dt>擊打傷害</dt><dd><b>50%元素攻擊</b></dd><dt>火焰傷害</dt><dd><b>140%智力</b></dd></dl><p class="mech-note">法術傷害加成翻倍</p></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>50%元素攻擊</td><td>127%元素攻擊</td></tr><tr><td>火焰傷害</td><td>140%智力</td><td>357%智力</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>70</td></tr><tr><td>Lv.10</td><td>5</td><td>275</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/meteor-strike/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-shockwave-mage" data-card data-cat="talent" data-tags="戰技|輔助|異常" data-s="衝擊波 shockwavemage · talent skill 戰技 輔助 異常 發射衝擊波，造成火焰傷害，擊退目標並施加碎甲。 shockwave-mage">
@@ -211,13 +218,15 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">輔助</span><span class="chip tg">異常</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>126</dd><dt>冷卻時間</dt><dd>9 s</dd><dt>施放距離</dt><dd>2.8 m</dd></dl>
 <p class="desc">發射衝擊波，造成火焰傷害，擊退目標並施加碎甲。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：5</li><li>火焰傷害：80%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>80%元素攻擊</td><td>132%元素攻擊</td><td>204%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>9</td><td>126</td></tr><tr><td>Lv.2</td><td>9</td><td>162</td></tr><tr><td>Lv.3</td><td>9</td><td>198</td></tr><tr><td>Lv.4</td><td>9</td><td>243</td></tr><tr><td>Lv.5</td><td>9</td><td>279</td></tr><tr><td>Lv.6</td><td>9</td><td>324</td></tr><tr><td>Lv.7</td><td>9</td><td>360</td></tr><tr><td>Lv.8</td><td>9</td><td>405</td></tr><tr><td>Lv.9</td><td>9</td><td>450</td></tr><tr><td>Lv.10</td><td>9</td><td>495</td></tr></tbody></table></div></details>
-<div class="sec var"><h4>變體形態</h4>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>5</b></dd><dt>火焰傷害</dt><dd><b>80%元素攻擊</b></dd></dl></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>80%元素攻擊</td><td>204%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>9</td><td>126</td></tr><tr><td>Lv.10</td><td>9</td><td>495</td></tr></tbody></table></div></div>
+<div class="sec var"><h4>變體形態<span class="vhint">由裝備詞綴授予：穿戴帶對應詞綴的裝備自動生效，無手動切換</span></h4>
+<p class="vsrc">變體來源：<a href="equipment.html#eq-burnwood-staff">燃木法杖</a></p>
 <div class="chips"><span class="chip tg">戰技</span><span class="chip tg">輔助</span><span class="chip tg">削弱</span></div>
 <p class="desc">發射衝擊波，造成火焰傷害，並降低目標火焰抗性。</p>
-<ul class="mech"><li>擊中數量：5</li><li>火焰傷害：6%生命</li><li>火焰抗性降低：20% （持續5秒）</li></ul>
+<div class="sec mech vsub"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>擊中數量</dt><dd><b>5</b></dd><dt>火焰傷害</dt><dd><b>6%生命</b></dd><dt>火焰抗性降低</dt><dd><b>20% （持續5秒）</b></dd></dl></div>
+
 <p class="note">等級數值與基礎形態相同。</p>
 </div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/shockwave-mage/" rel="noopener">grandwiki 原頁 ↗</a>
@@ -229,8 +238,8 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">增益</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>魔力消耗</dt><dd>182</dd><dt>冷卻時間</dt><dd>13 s</dd><dt>施放距離</dt><dd>5 m</dd></dl>
 <p class="desc">數秒內提升自身元素攻擊和閃電傷害。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>閃電傷害提升：10% （持續6秒）</li><li>（持續6秒）</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>13</td><td>182</td></tr><tr><td>Lv.2</td><td>13</td><td>234</td></tr><tr><td>Lv.3</td><td>13</td><td>286</td></tr><tr><td>Lv.4</td><td>13</td><td>351</td></tr><tr><td>Lv.5</td><td>13</td><td>403</td></tr><tr><td>Lv.6</td><td>13</td><td>468</td></tr><tr><td>Lv.7</td><td>13</td><td>520</td></tr><tr><td>Lv.8</td><td>13</td><td>585</td></tr><tr><td>Lv.9</td><td>13</td><td>650</td></tr><tr><td>Lv.10</td><td>13</td><td>715</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>閃電傷害提升</dt><dd><b>10% （持續6秒）</b></dd></dl></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>13</td><td>182</td></tr><tr><td>Lv.10</td><td>13</td><td>715</td></tr></tbody></table></div><p class="note">來源僅提供冷卻時間／魔力消耗成長，未公開效果成長係數。</p></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/storm-infusion/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-summon-fire-demon" data-card data-cat="talent" data-tags="法術|支援|僕從" data-s="召喚炎魔 summon fire demon 法術 支援 僕從 召喚炎魔幫助作戰，炎魔可以使用炎擊技能，炎魔死亡時會自爆。 summon-fire-demon">
@@ -240,8 +249,8 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">支援</span><span class="chip tg">僕從</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>魔力消耗</dt><dd>56</dd><dt>冷卻時間</dt><dd>4 s</dd><dt>施放距離</dt><dd>4 m</dd></dl>
 <p class="desc">召喚炎魔幫助作戰，炎魔可以使用炎擊技能，炎魔死亡時會自爆。</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>數量上限：5</li><li>持續時間：9秒</li><li>屬性繼承：20%</li><li>元素攻擊額外繼承：20%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>4</td><td>56</td></tr><tr><td>Lv.2</td><td>4</td><td>72</td></tr><tr><td>Lv.3</td><td>4</td><td>88</td></tr><tr><td>Lv.4</td><td>4</td><td>108</td></tr><tr><td>Lv.5</td><td>4</td><td>124</td></tr><tr><td>Lv.6</td><td>4</td><td>144</td></tr><tr><td>Lv.7</td><td>4</td><td>160</td></tr><tr><td>Lv.8</td><td>4</td><td>180</td></tr><tr><td>Lv.9</td><td>4</td><td>200</td></tr><tr><td>Lv.10</td><td>4</td><td>220</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>數量上限</dt><dd><b>5</b></dd><dt>持續時間</dt><dd><b>9秒</b></dd><dt>屬性繼承</dt><dd><b>20%</b></dd><dt>元素攻擊額外繼承</dt><dd><b>20%</b></dd></dl></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>4</td><td>56</td></tr><tr><td>Lv.10</td><td>4</td><td>220</td></tr></tbody></table></div><p class="note">來源僅提供冷卻時間／魔力消耗成長，未公開效果成長係數。</p></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/summon-fire-demon/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-wall-of-fire" data-card data-cat="talent" data-tags="法術|精通" data-s="烈焰之牆 wall of fire 法術 精通 召喚一片烈焰，持續造成火焰傷害，無視目標元素防禦。 無視元素防禦 wall-of-fire">
@@ -251,9 +260,9 @@
 <div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
 <dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>匕首 法典</dd><dt>魔力消耗</dt><dd>98</dd><dt>冷卻時間</dt><dd>7 s</dd><dt>施放距離</dt><dd>3.8 m</dd></dl>
 <p class="desc">召喚一片烈焰，持續造成火焰傷害，無視目標元素防禦。 無視元素防禦</p>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>持續時間：4秒</li><li>傷害間隔：1 秒</li><li>擊中數量：4</li><li>火焰傷害：35%元素攻擊</li><li>無視元素防禦</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
-<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>35%元素攻擊</td><td>58%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
-<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>7</td><td>98</td></tr><tr><td>Lv.2</td><td>7</td><td>126</td></tr><tr><td>Lv.3</td><td>7</td><td>154</td></tr><tr><td>Lv.4</td><td>7</td><td>189</td></tr><tr><td>Lv.5</td><td>7</td><td>217</td></tr><tr><td>Lv.6</td><td>7</td><td>252</td></tr><tr><td>Lv.7</td><td>7</td><td>280</td></tr><tr><td>Lv.8</td><td>7</td><td>315</td></tr><tr><td>Lv.9</td><td>7</td><td>350</td></tr><tr><td>Lv.10</td><td>7</td><td>385</td></tr></tbody></table></div></details>
+<div class="sec mech"><h4>機制與關鍵詞<span class="lv1">Lv.1 基準</span></h4><dl class="mech-kv"><dt>持續時間</dt><dd><b>4秒</b></dd><dt>傷害間隔</dt><dd><b>1 秒</b></dd><dt>擊中數量</dt><dd><b>4</b></dd><dt>火焰傷害</dt><dd><b>35%元素攻擊</b></dd></dl><p class="mech-note">無視元素防禦</p></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>35%元素攻擊</td><td>89%元素攻擊</td></tr></tbody></table></div></div>
+<div class="sec lvl"><h4>成長表（Lv.1 / Lv.10）</h4><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>7</td><td>98</td></tr><tr><td>Lv.10</td><td>7</td><td>385</td></tr></tbody></table></div></div>
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/wall-of-fire/" rel="noopener">grandwiki 原頁 ↗</a>
 </article></div></section>
 <section class="grp" data-group><h2>天賦專精技能 <span class="n">12</span></h2><div class="grid"><article class="card sk c-mag" id="sk-activate" data-card data-cat="mastery" data-tags="" data-s="激活 activate activate">
@@ -261,8 +270,9 @@
 <img class="ico" src="icons/talent_302006.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">激活<span class="en">Activate</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>護盾充能 +100%</li><li>護盾存在時，每秒恢復1%魔力。</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>護盾充能</dt><dd><b>+100%</b></dd></dl><p class="mech-note">護盾存在時，每秒恢復1%魔力。</p><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/activate/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-convert" data-card data-cat="mastery" data-tags="" data-s="轉化 convert convert">
@@ -270,8 +280,9 @@
 <img class="ico" src="icons/talent_302007.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">轉化<span class="en">Convert</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>魔力再生 +100%</li><li>消耗魔力的 +100% 轉化為能量護盾</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>魔力再生</dt><dd><b>+100%</b></dd></dl><p class="mech-note">消耗魔力的 +100% 轉化為能量護盾</p><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/convert/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-empowerment" data-card data-cat="mastery" data-tags="" data-s="盈能 empowerment empowerment">
@@ -279,8 +290,9 @@
 <img class="ico" src="icons/talent_302009.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">盈能<span class="en">Empowerment</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>所有技能消耗 +70%</li><li>魔力佔用 +70%</li><li>釋放精通技能時，發射冰霜尖刺，造成（60%暴擊值的）冰霜傷害</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>所有技能消耗</dt><dd><b>+70%</b></dd><dt>魔力佔用</dt><dd><b>+70%</b></dd></dl><p class="mech-note">釋放精通技能時，發射冰霜尖刺，造成（60%暴擊值的）冰霜傷害</p><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/empowerment/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-eternal-frost" data-card data-cat="mastery" data-tags="" data-s="永霜 eternal frost eternal-frost">
@@ -288,8 +300,9 @@
 <img class="ico" src="icons/talent_302010.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">永霜<span class="en">Eternal Frost</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>冰霜傷害 +120%</li><li>精通技能傷害 +80%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>冰霜傷害</dt><dd><b>+120%</b></dd><dt>精通技能傷害</dt><dd><b>+80%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/eternal-frost/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-ice-toughness" data-card data-cat="mastery" data-tags="" data-s="冰韌 ice toughness ice-toughness">
@@ -297,8 +310,9 @@
 <img class="ico" src="icons/talent_302012.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">冰韌<span class="en">Ice Toughness</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>元素抗性 +100%</li><li>物理防禦 +100%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>元素抗性</dt><dd><b>+100%</b></dd><dt>物理防禦</dt><dd><b>+100%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/ice-toughness/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-incinerate" data-card data-cat="mastery" data-tags="" data-s="焚毀 incinerate incinerate">
@@ -306,8 +320,9 @@
 <img class="ico" src="icons/talent_302004.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">焚毀<span class="en">Incinerate</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>火焰傷害 +100%</li><li>基礎技能傷害 +100%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>火焰傷害</dt><dd><b>+100%</b></dd><dt>基礎技能傷害</dt><dd><b>+100%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/incinerate/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-inspiration" data-card data-cat="mastery" data-tags="" data-s="激發 inspiration inspiration">
@@ -315,8 +330,9 @@
 <img class="ico" src="icons/talent_302008.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">激發<span class="en">Inspiration</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>法術速度 +100%</li><li>釋放技能時有 +100% 機率不消耗魔力</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>法術速度</dt><dd><b>+100%</b></dd></dl><p class="mech-note">釋放技能時有 +100% 機率不消耗魔力</p><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/inspiration/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-ruin" data-card data-cat="mastery" data-tags="" data-s="毀滅 ruin ruin">
@@ -324,8 +340,9 @@
 <img class="ico" src="icons/talent_302003.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">毀滅<span class="en">Ruin</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>元素攻擊 +90%</li><li>暴擊值 +70%</li><li>對首領敵人傷害 +60%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>元素攻擊</dt><dd><b>+90%</b></dd><dt>暴擊值</dt><dd><b>+70%</b></dd><dt>對首領敵人傷害</dt><dd><b>+60%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/ruin/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-scholar" data-card data-cat="mastery" data-tags="" data-s="學識 scholar scholar">
@@ -333,8 +350,9 @@
 <img class="ico" src="icons/talent_302001.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">學識<span class="en">Scholar</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>力量 +70%</li><li>敏捷 +70%</li><li>智力 +80%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>力量</dt><dd><b>+70%</b></dd><dt>敏捷</dt><dd><b>+70%</b></dd><dt>智力</dt><dd><b>+80%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/scholar/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-slow" data-card data-cat="mastery" data-tags="" data-s="凝滯 slow slow">
@@ -342,8 +360,9 @@
 <img class="ico" src="icons/talent_302002.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">凝滯<span class="en">Slow</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>增益時間 +80%</li><li>削弱時間 +70%</li><li>護盾衰減速度 +70%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>增益時間</dt><dd><b>+80%</b></dd><dt>削弱時間</dt><dd><b>+70%</b></dd><dt>護盾衰減速度</dt><dd><b>+70%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/slow/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-thunder" data-card data-cat="mastery" data-tags="" data-s="雷霆 thunder thunder">
@@ -351,8 +370,9 @@
 <img class="ico" src="icons/talent_302005.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">雷霆<span class="en">Thunder</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>閃電傷害 +80%</li><li>法術精準 +70%</li><li>閃電抗性 +70%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>閃電傷害</dt><dd><b>+80%</b></dd><dt>法術精準</dt><dd><b>+70%</b></dd><dt>閃電抗性</dt><dd><b>+70%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/thunder/" rel="noopener">grandwiki 原頁 ↗</a>
 </article>
 <article class="card sk c-mag" id="sk-wisdom" data-card data-cat="mastery" data-tags="" data-s="睿智 wisdom wisdom">
@@ -360,15 +380,17 @@
 <img class="ico" src="icons/talent_302011.png" alt="" width="46" height="46" loading="lazy">
 <div class="ct"><h3 class="nm">睿智<span class="en">Wisdom</span></h3>
 <div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
-<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
-<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>智力 +60%</li><li>魔力 +150%</li></ul></div>
+
+<div class="sec mech"><h4>專精效果</h4><dl class="mech-kv"><dt>智力</dt><dd><b>+60%</b></dd><dt>魔力</dt><dd><b>+150%</b></dd></dl><p class="note">此類技能來源即為簡化頁：無係數表／成長表。</p></div>
+
 <a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/wisdom/" rel="noopener">grandwiki 原頁 ↗</a>
 </article></div></section>
 <p id="empty" class="empty" hidden>沒有符合條件的技能。</p>
 <footer class="dbfoot">
   <p>資料來源：<a href="https://pathofidle.grandwiki.com/zh-hant/" rel="noopener">grandwiki · Path of Idle 資料庫</a>　·　資料版本 <b>2026-08-18</b>（遊戲 1.0.6.2）</p>
   <p><b>非官方粉絲整理</b>，非遊戲官方發布；數值與機制隨改版可能變動，請以遊戲內現況為準。</p>
-  <p>頁面產生日期：2026-08-31　·　註：部分條目名與效果敘述沿用來源頁簡體字（忠實照抄）。</p>
+  <p>頁面產生日期：2026-08-31　·　技能成長表僅顯示 Lv.1 與 Lv.10（完整 1–10 級數據保留於來源資料）　·　註：部分條目名與效果敘述沿用來源頁簡體字（忠實照抄）。</p>
+  <p><b>機制數值均為 Lv.1 基準值，實戰隨等級與增傷變化</b>；「專精效果」為固定加成，不隨等級成長。</p>
 </footer>
 </div>
 <script>
@@ -408,13 +430,6 @@
       btns.forEach(function(o){if(o.getAttribute('data-k')===k)o.classList.toggle('on',o===b);});
       apply();
     });
-  });
-  var ex=document.getElementById('expandall');
-  if(ex)ex.addEventListener('click',function(){
-    var ds=document.querySelectorAll('details.lvl'),open=ex.getAttribute('data-open')!=='1';
-    for(var i=0;i<ds.length;i++)ds[i].open=open;
-    ex.setAttribute('data-open',open?'1':'0');
-    ex.textContent=open?'收合全部成長表':'展開全部成長表';
   });
   apply();
 })();
