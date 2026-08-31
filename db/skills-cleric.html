@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>神官 技能 · Path of Idle 資料庫</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="db.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="dbnav">
+<a class="back" href="../index.html">← 回攻略</a>
+<a href="index.html">資料庫首頁</a>
+<a href="skills-warrior.html">戰士</a>
+<a href="skills-hunter.html">獵人</a>
+<a href="skills-mage.html">法師</a>
+<a href="skills-cleric.html" class="on">神官</a>
+<a href="skills-mercenary.html">傭兵</a>
+<a href="skills-priest.html">祭司</a>
+<a href="sets.html">套裝</a>
+<a href="equipment.html">裝備</a>
+<a href="runewords.html">符文之語</a>
+</nav>
+<header class="phead c-cle"><div class="eyebrow">Skills · cleric</div><h1>神官 技能</h1><p class="lead">27 個技能：基礎技能、天賦技能與天賦專精技能，含標籤、消耗、成長表與變體形態。</p></header>
+<div class="toolbar">
+<div class="searchrow"><input id="q" type="search" placeholder="搜尋名稱／英文名／關鍵字…" autocomplete="off" aria-label="搜尋"><span class="cnt">顯示 <b id="count">27</b> / 27 個技能</span></div>
+<div class="frow"><span class="flabel">分類</span>
+<button class="fbtn on" data-k="cat" data-v="">全部</button>
+<button class="fbtn" data-k="cat" data-v="base">基礎</button>
+<button class="fbtn" data-k="cat" data-v="talent">天賦</button>
+<button class="fbtn" data-k="cat" data-v="mastery">精通</button>
+</div>
+<div class="frow"><span class="flabel">標籤</span>
+<button class="fbtn on" data-k="tags" data-v="">全部</button>
+<button class="fbtn" data-k="tags" data-v="光環">光環</button>
+<button class="fbtn" data-k="tags" data-v="削弱">削弱</button>
+<button class="fbtn" data-k="tags" data-v="基礎">基礎</button>
+<button class="fbtn" data-k="tags" data-v="增益">增益</button>
+<button class="fbtn" data-k="tags" data-v="戰技">戰技</button>
+<button class="fbtn" data-k="tags" data-v="支援">支援</button>
+<button class="fbtn" data-k="tags" data-v="法術">法術</button>
+<button class="fbtn" data-k="tags" data-v="精通">精通</button>
+<button class="fbtn" data-k="tags" data-v="輔助">輔助</button>
+</div>
+</div>
+<div class="tools2"><button id="expandall" class="fbtn" data-open="0" type="button">展開全部成長表</button></div>
+<section class="grp" data-group><h2>基礎技能 <span class="n">3</span></h2><div class="grid"><article class="card sk c-cle" id="sk-blessed-strike" data-card data-cat="base" data-tags="戰技|基礎" data-s="祝福打擊 blessed strike 戰技 基礎 神聖的一擊，造成擊打傷害，自身獲得治療 blessed-strike">
+<header class="ch">
+<img class="ico" src="icons/talent_401101.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">祝福打擊<span class="en">Blessed Strike</span></h3>
+<div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">戰技</span><span class="chip tg">基礎</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>戰錘 長杖</dd><dt>冷卻時間</dt><dd>1.2 s</dd><dt>施放距離</dt><dd>0.85 m</dd></dl>
+<p class="desc">神聖的一擊，造成擊打傷害，自身獲得治療</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：1</li><li>擊打傷害：55%物理攻擊</li><li>生命治療：15%物理防禦</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>55%物理攻擊</td><td>91%物理攻擊</td><td>140%物理攻擊</td></tr><tr><td>生命治療</td><td>15%物理防禦</td><td>25%物理防禦</td><td>38%物理防禦</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.2</td></tr><tr><td>Lv.2</td><td>1.2</td></tr><tr><td>Lv.3</td><td>1.2</td></tr><tr><td>Lv.4</td><td>1.2</td></tr><tr><td>Lv.5</td><td>1.2</td></tr><tr><td>Lv.6</td><td>1.2</td></tr><tr><td>Lv.7</td><td>1.2</td></tr><tr><td>Lv.8</td><td>1.2</td></tr><tr><td>Lv.9</td><td>1.2</td></tr><tr><td>Lv.10</td><td>1.2</td></tr></tbody></table></div></details>
+<div class="sec var"><h4>變體形態</h4>
+<div class="chips"><span class="chip tg">戰技</span><span class="chip tg">基礎</span></div>
+<p class="desc">神聖的一擊，造成擊打傷害，自身獲得魔力。</p>
+<ul class="mech"><li>擊中數量：1</li><li>擊打傷害：55%物理攻擊</li><li>魔力獲取：15%物理防禦</li></ul>
+<p class="note">等級數值與基礎形態相同。</p>
+</div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/blessed-strike/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-chastise" data-card data-cat="base" data-tags="法術|基礎|削弱" data-s="懲戒 chastise 法術 基礎 削弱 降下聖火，造成火焰和閃電傷害，並降低目標元素抗性。 chastise">
+<header class="ch">
+<img class="ico" src="icons/talent_401103.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">懲戒<span class="en">Chastise</span></h3>
+<div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">法術</span><span class="chip tg">基礎</span><span class="chip tg">削弱</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>冷卻時間</dt><dd>1.1 s</dd><dt>施放距離</dt><dd>4 m</dd></dl>
+<p class="desc">降下聖火，造成火焰和閃電傷害，並降低目標元素抗性。</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：2</li><li>火焰傷害：20%元素攻擊</li><li>閃電傷害：40%智力</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>20%元素攻擊</td><td>33%元素攻擊</td><td>51%元素攻擊</td></tr><tr><td>閃電傷害</td><td>40%智力</td><td>66%智力</td><td>102%智力</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.1</td></tr><tr><td>Lv.2</td><td>1.1</td></tr><tr><td>Lv.3</td><td>1.1</td></tr><tr><td>Lv.4</td><td>1.1</td></tr><tr><td>Lv.5</td><td>1.1</td></tr><tr><td>Lv.6</td><td>1.1</td></tr><tr><td>Lv.7</td><td>1.1</td></tr><tr><td>Lv.8</td><td>1.1</td></tr><tr><td>Lv.9</td><td>1.1</td></tr><tr><td>Lv.10</td><td>1.1</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/chastise/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-lightning-judgment" data-card data-cat="base" data-tags="法術|基礎" data-s="電光裁決 lightning judgment 法術 基礎 釋放電弧，對前方敵人造成閃電傷害 lightning-judgment">
+<header class="ch">
+<img class="ico" src="icons/talent_401102.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">電光裁決<span class="en">Lightning Judgment</span></h3>
+<div class="chips"><span class="chip cat cat-base">基礎</span><span class="chip tg">法術</span><span class="chip tg">基礎</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>攻擊</dd><dt>武器需求</dt><dd>戰錘 法典</dd><dt>冷卻時間</dt><dd>1.4 s</dd><dt>施放距離</dt><dd>2 m</dd></dl>
+<p class="desc">釋放電弧，對前方敵人造成閃電傷害</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：3</li><li>閃電傷害：50%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>50%元素攻擊</td><td>82%元素攻擊</td><td>127%元素攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th></tr></thead><tbody><tr><td>Lv.1</td><td>1.4</td></tr><tr><td>Lv.2</td><td>1.4</td></tr><tr><td>Lv.3</td><td>1.4</td></tr><tr><td>Lv.4</td><td>1.4</td></tr><tr><td>Lv.5</td><td>1.4</td></tr><tr><td>Lv.6</td><td>1.4</td></tr><tr><td>Lv.7</td><td>1.4</td></tr><tr><td>Lv.8</td><td>1.4</td></tr><tr><td>Lv.9</td><td>1.4</td></tr><tr><td>Lv.10</td><td>1.4</td></tr></tbody></table></div></details>
+<div class="sec var"><h4>變體形態</h4>
+<div class="chips"><span class="chip tg">法術</span><span class="chip tg">基礎</span></div>
+<p class="desc">釋放電弧，對前方敵人造成閃電傷害，有幾率驅散目標。</p>
+<ul class="mech"><li>擊中數量：3</li><li>閃電傷害：40%元素攻擊</li><li>驅散幾率：25%</li></ul>
+<p class="note">等級數值與基礎形態相同。</p>
+</div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/lightning-judgment/" rel="noopener">grandwiki 原頁 ↗</a>
+</article></div></section>
+<section class="grp" data-group><h2>天賦技能 <span class="n">12</span></h2><div class="grid"><article class="card sk c-cle" id="sk-aura-of-flame" data-card data-cat="talent" data-tags="法術|輔助|光環" data-s="烈焰光環 aura of flame 法術 輔助 光環 所有友方獲得火焰傷害提升和火焰抗性提升。 aura-of-flame">
+<header class="ch">
+<img class="ico" src="icons/talent_401207.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">烈焰光環<span class="en">Aura of Flame</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>冷卻時間</dt><dd>0 s</dd><dt>施放距離</dt><dd>9 m</dd></dl>
+<p class="desc">所有友方獲得火焰傷害提升和火焰抗性提升。</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>火焰傷害提升：15%</li><li>火焰抗性提升：18%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>魔力保留</th></tr></thead><tbody><tr><td>Lv.1</td><td>25</td></tr><tr><td>Lv.2</td><td>27</td></tr><tr><td>Lv.3</td><td>28</td></tr><tr><td>Lv.4</td><td>30</td></tr><tr><td>Lv.5</td><td>31</td></tr><tr><td>Lv.6</td><td>32</td></tr><tr><td>Lv.7</td><td>33</td></tr><tr><td>Lv.8</td><td>34</td></tr><tr><td>Lv.9</td><td>35</td></tr><tr><td>Lv.10</td><td>35</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/aura-of-flame/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-aura-of-focus" data-card data-cat="talent" data-tags="戰技|輔助|光環" data-s="專注光環 aura of focus 戰技 輔助 光環 所有友方獲得元素防禦提升和戰技精準提升 aura-of-focus">
+<header class="ch">
+<img class="ico" src="icons/talent_401202.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">專注光環<span class="en">Aura of Focus</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>冷卻時間</dt><dd>0 s</dd><dt>施放距離</dt><dd>9 m</dd></dl>
+<p class="desc">所有友方獲得元素防禦提升和戰技精準提升</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>戰技精準提升：14%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>魔力保留</th></tr></thead><tbody><tr><td>Lv.1</td><td>25</td></tr><tr><td>Lv.2</td><td>27</td></tr><tr><td>Lv.3</td><td>28</td></tr><tr><td>Lv.4</td><td>30</td></tr><tr><td>Lv.5</td><td>31</td></tr><tr><td>Lv.6</td><td>32</td></tr><tr><td>Lv.7</td><td>33</td></tr><tr><td>Lv.8</td><td>34</td></tr><tr><td>Lv.9</td><td>35</td></tr><tr><td>Lv.10</td><td>35</td></tr></tbody></table></div></details>
+<div class="sec var"><h4>變體形態</h4>
+<div class="chips"><span class="chip tg">戰技</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div>
+<p class="desc">所有友方獲得物理防禦提升和戰技精準提升。</p>
+<ul class="mech"><li>戰技精準提升：14%</li></ul>
+<p class="note">等級數值與基礎形態相同。</p>
+</div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/aura-of-focus/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-aura-of-lightning" data-card data-cat="talent" data-tags="法術|輔助|光環" data-s="閃電光環 aura of lightning 法術 輔助 光環 所有友方獲得閃電傷害提升和閃電抗性提升 aura-of-lightning">
+<header class="ch">
+<img class="ico" src="icons/talent_401208.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">閃電光環<span class="en">Aura of Lightning</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">輔助</span><span class="chip tg">光環</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>冷卻時間</dt><dd>0 s</dd><dt>施放距離</dt><dd>9 m</dd></dl>
+<p class="desc">所有友方獲得閃電傷害提升和閃電抗性提升</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>閃電傷害提升：15%</li><li>閃電抗性提升：18%</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>魔力保留</th></tr></thead><tbody><tr><td>Lv.1</td><td>25</td></tr><tr><td>Lv.2</td><td>27</td></tr><tr><td>Lv.3</td><td>28</td></tr><tr><td>Lv.4</td><td>30</td></tr><tr><td>Lv.5</td><td>31</td></tr><tr><td>Lv.6</td><td>32</td></tr><tr><td>Lv.7</td><td>33</td></tr><tr><td>Lv.8</td><td>34</td></tr><tr><td>Lv.9</td><td>35</td></tr><tr><td>Lv.10</td><td>35</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/aura-of-lightning/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-divine-shelter" data-card data-cat="talent" data-tags="法術|支援|增益" data-s="神聖庇護 divine shelter 法術 支援 增益 祈禱神的庇護，自身獲得護盾，並獲得3層堅毅。 divine-shelter">
+<header class="ch">
+<img class="ico" src="icons/talent_401203.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">神聖庇護<span class="en">Divine Shelter</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">支援</span><span class="chip tg">增益</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>魔力消耗</dt><dd>140</dd><dt>冷卻時間</dt><dd>10 s</dd><dt>施放距離</dt><dd>3 m</dd></dl>
+<p class="desc">祈禱神的庇護，自身獲得護盾，並獲得3層堅毅。</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>護盾充能：260%力量</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>護盾充能</td><td>260%力量</td><td>429%力量</td><td>663%力量</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>10</td><td>140</td></tr><tr><td>Lv.2</td><td>10</td><td>180</td></tr><tr><td>Lv.3</td><td>10</td><td>220</td></tr><tr><td>Lv.4</td><td>10</td><td>270</td></tr><tr><td>Lv.5</td><td>10</td><td>310</td></tr><tr><td>Lv.6</td><td>10</td><td>360</td></tr><tr><td>Lv.7</td><td>10</td><td>400</td></tr><tr><td>Lv.8</td><td>10</td><td>450</td></tr><tr><td>Lv.9</td><td>10</td><td>500</td></tr><tr><td>Lv.10</td><td>10</td><td>550</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/divine-shelter/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-hammer-of-judgment" data-card data-cat="talent" data-tags="戰技|精通" data-s="審判之錘 hammer of judgment 戰技 精通 魔法戰錘旋轉飛出，擊中敵方造成擊打傷害 hammer-of-judgment">
+<header class="ch">
+<img class="ico" src="icons/talent_401204.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">審判之錘<span class="en">Hammer of Judgment</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">精通</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>戰錘 刀劍 長杖</dd><dt>魔力消耗</dt><dd>84</dd><dt>冷卻時間</dt><dd>6 s</dd><dt>施放距離</dt><dd>1.5 m</dd></dl>
+<p class="desc">魔法戰錘旋轉飛出，擊中敵方造成擊打傷害</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：1</li><li>飛錘數量：3</li><li>擊打傷害：30%物理攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>30%物理攻擊</td><td>49%物理攻擊</td><td>76%物理攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>6</td><td>84</td></tr><tr><td>Lv.2</td><td>6</td><td>108</td></tr><tr><td>Lv.3</td><td>6</td><td>132</td></tr><tr><td>Lv.4</td><td>6</td><td>162</td></tr><tr><td>Lv.5</td><td>6</td><td>186</td></tr><tr><td>Lv.6</td><td>6</td><td>216</td></tr><tr><td>Lv.7</td><td>6</td><td>240</td></tr><tr><td>Lv.8</td><td>6</td><td>270</td></tr><tr><td>Lv.9</td><td>6</td><td>300</td></tr><tr><td>Lv.10</td><td>6</td><td>330</td></tr></tbody></table></div></details>
+<div class="sec var"><h4>變體形態</h4>
+<div class="chips"><span class="chip tg">法術</span><span class="chip tg">精通</span></div>
+<p class="desc">尖刺孢子旋轉飛出，擊中敵方造成穿刺傷害。</p>
+<ul class="mech"><li>擊中數量：1</li><li>飛錘數量：3</li><li>穿刺傷害：30%物理攻擊</li></ul>
+<p class="note">等級數值與基礎形態相同。</p>
+</div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/hammer-of-judgment/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-holy-bolt" data-card data-cat="talent" data-tags="法術|支援" data-s="聖光彈 holy bolt 法術 支援 神聖的光球向前飛出，治療接觸的友方目標 holy-bolt">
+<header class="ch">
+<img class="ico" src="icons/talent_401210.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">聖光彈<span class="en">Holy Bolt</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">支援</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>126</dd><dt>冷卻時間</dt><dd>9 s</dd><dt>施放距離</dt><dd>4.4 m</dd></dl>
+<p class="desc">神聖的光球向前飛出，治療接觸的友方目標</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>目標數量：4</li><li>生命治療：120%智力</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>生命治療</td><td>120%智力</td><td>198%智力</td><td>306%智力</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>9</td><td>126</td></tr><tr><td>Lv.2</td><td>9</td><td>162</td></tr><tr><td>Lv.3</td><td>9</td><td>198</td></tr><tr><td>Lv.4</td><td>9</td><td>243</td></tr><tr><td>Lv.5</td><td>9</td><td>279</td></tr><tr><td>Lv.6</td><td>9</td><td>324</td></tr><tr><td>Lv.7</td><td>9</td><td>360</td></tr><tr><td>Lv.8</td><td>9</td><td>405</td></tr><tr><td>Lv.9</td><td>9</td><td>450</td></tr><tr><td>Lv.10</td><td>9</td><td>495</td></tr></tbody></table></div></details>
+<div class="sec var"><h4>變體形態</h4>
+<div class="chips"><span class="chip tg">法術</span><span class="chip tg">支援</span></div>
+<p class="desc">神聖的光球向前飛出，保護接觸的友方目標。</p>
+<ul class="mech"><li>目標數量：4</li><li>護盾充能：120%智力</li></ul>
+<p class="note">等級數值與基礎形態相同。</p>
+</div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/holy-bolt/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-holy-flame-strike" data-card data-cat="talent" data-tags="戰技|精通" data-s="聖火衝擊 holy flame strike 戰技 精通 爆發烈焰，對自身和目標造成火焰傷害,無視目標元素防禦。 無視元素防禦 holy-flame-strike">
+<header class="ch">
+<img class="ico" src="icons/talent_401201.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">聖火衝擊<span class="en">Holy Flame Strike</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">精通</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>戰錘 刀劍 長杖</dd><dt>魔力消耗</dt><dd>56</dd><dt>冷卻時間</dt><dd>4 s</dd><dt>施放距離</dt><dd>1.5 m</dd></dl>
+<p class="desc">爆發烈焰，對自身和目標造成火焰傷害,無視目標元素防禦。 無視元素防禦</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>火焰傷害：100%物理攻擊</li><li>無視元素防禦</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>100%物理攻擊</td><td>165%物理攻擊</td><td>255%物理攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>4</td><td>56</td></tr><tr><td>Lv.2</td><td>4</td><td>72</td></tr><tr><td>Lv.3</td><td>4</td><td>88</td></tr><tr><td>Lv.4</td><td>4</td><td>108</td></tr><tr><td>Lv.5</td><td>4</td><td>124</td></tr><tr><td>Lv.6</td><td>4</td><td>144</td></tr><tr><td>Lv.7</td><td>4</td><td>160</td></tr><tr><td>Lv.8</td><td>4</td><td>180</td></tr><tr><td>Lv.9</td><td>4</td><td>200</td></tr><tr><td>Lv.10</td><td>4</td><td>220</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/holy-flame-strike/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-light-of-blindness" data-card data-cat="talent" data-tags="戰技|輔助|削弱" data-s="盲目之光 light of blindness 戰技 輔助 削弱 釋放強力閃光，造成閃電傷害，降低目標閃避值，並驅散 驅散目標 light-of-blindness">
+<header class="ch">
+<img class="ico" src="icons/talent_401212.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">盲目之光<span class="en">Light of Blindness</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">輔助</span><span class="chip tg">削弱</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>98</dd><dt>冷卻時間</dt><dd>7 s</dd><dt>施放距離</dt><dd>3.5 m</dd></dl>
+<p class="desc">釋放強力閃光，造成閃電傷害，降低目標閃避值，並驅散 驅散目標</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>閃電傷害：60%元素攻擊</li><li>驅散目標</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>閃電傷害</td><td>60%元素攻擊</td><td>99%元素攻擊</td><td>153%元素攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>7</td><td>98</td></tr><tr><td>Lv.2</td><td>7</td><td>126</td></tr><tr><td>Lv.3</td><td>7</td><td>154</td></tr><tr><td>Lv.4</td><td>7</td><td>189</td></tr><tr><td>Lv.5</td><td>7</td><td>217</td></tr><tr><td>Lv.6</td><td>7</td><td>252</td></tr><tr><td>Lv.7</td><td>7</td><td>280</td></tr><tr><td>Lv.8</td><td>7</td><td>315</td></tr><tr><td>Lv.9</td><td>7</td><td>350</td></tr><tr><td>Lv.10</td><td>7</td><td>385</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/light-of-blindness/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-light-of-healing" data-card data-cat="talent" data-tags="法術|支援" data-s="治癒之光 light of healing 法術 支援 治療生命值最低的目標，對貧血的目標治療翻倍 目標數量：1 對貧血目標治療翻倍 light-of-healing">
+<header class="ch">
+<img class="ico" src="icons/talent_401211.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">治癒之光<span class="en">Light of Healing</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">支援</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>戰錘 長杖 法典</dd><dt>魔力消耗</dt><dd>84</dd><dt>冷卻時間</dt><dd>6 s</dd><dt>施放距離</dt><dd>4.2 m</dd></dl>
+<p class="desc">治療生命值最低的目標，對貧血的目標治療翻倍 目標數量：1 對貧血目標治療翻倍</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>目標數量：1</li><li>生命治療：10%生命</li><li>對貧血目標治療翻倍</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>生命治療</td><td>10%生命</td><td>17%生命</td><td>26%生命</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>6</td><td>84</td></tr><tr><td>Lv.2</td><td>6</td><td>108</td></tr><tr><td>Lv.3</td><td>6</td><td>132</td></tr><tr><td>Lv.4</td><td>6</td><td>162</td></tr><tr><td>Lv.5</td><td>6</td><td>186</td></tr><tr><td>Lv.6</td><td>6</td><td>216</td></tr><tr><td>Lv.7</td><td>6</td><td>240</td></tr><tr><td>Lv.8</td><td>6</td><td>270</td></tr><tr><td>Lv.9</td><td>6</td><td>300</td></tr><tr><td>Lv.10</td><td>6</td><td>330</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/light-of-healing/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-mind-fire" data-card data-cat="talent" data-tags="法術|精通" data-s="心靈之火 mind fire 法術 精通 點燃多個目標，使他們持續受到火焰傷害 mind-fire">
+<header class="ch">
+<img class="ico" src="icons/talent_401209.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">心靈之火<span class="en">Mind Fire</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>長杖 法典</dd><dt>魔力消耗</dt><dd>70</dd><dt>冷卻時間</dt><dd>5 s</dd><dt>施放距離</dt><dd>3.8 m</dd></dl>
+<p class="desc">點燃多個目標，使他們持續受到火焰傷害</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：5</li><li>持續時間：3秒</li><li>火焰傷害：50%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>火焰傷害</td><td>50%元素攻擊</td><td>82%元素攻擊</td><td>127%元素攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>70</td></tr><tr><td>Lv.2</td><td>5</td><td>90</td></tr><tr><td>Lv.3</td><td>5</td><td>110</td></tr><tr><td>Lv.4</td><td>5</td><td>135</td></tr><tr><td>Lv.5</td><td>5</td><td>155</td></tr><tr><td>Lv.6</td><td>5</td><td>180</td></tr><tr><td>Lv.7</td><td>5</td><td>200</td></tr><tr><td>Lv.8</td><td>5</td><td>225</td></tr><tr><td>Lv.9</td><td>5</td><td>250</td></tr><tr><td>Lv.10</td><td>5</td><td>275</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/mind-fire/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-shield-of-vengeance" data-card data-cat="talent" data-tags="戰技|精通" data-s="復仇之盾 shield of vengeance 戰技 精通 投擲飛盾，造成擊打傷害和火焰傷害 shield-of-vengeance">
+<header class="ch">
+<img class="ico" src="icons/talent_401206.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">復仇之盾<span class="en">Shield of Vengeance</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">戰技</span><span class="chip tg">精通</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>戰錘 長杖</dd><dt>魔力消耗</dt><dd>84</dd><dt>冷卻時間</dt><dd>6 s</dd><dt>施放距離</dt><dd>2.4 m</dd></dl>
+<p class="desc">投擲飛盾，造成擊打傷害和火焰傷害</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>擊打傷害：40%物理攻擊</li><li>火焰傷害：45%元素防禦</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>擊打傷害</td><td>40%物理攻擊</td><td>66%物理攻擊</td><td>102%物理攻擊</td></tr><tr><td>火焰傷害</td><td>45%元素防禦</td><td>74%元素防禦</td><td>115%元素防禦</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>6</td><td>84</td></tr><tr><td>Lv.2</td><td>6</td><td>108</td></tr><tr><td>Lv.3</td><td>6</td><td>132</td></tr><tr><td>Lv.4</td><td>6</td><td>162</td></tr><tr><td>Lv.5</td><td>6</td><td>186</td></tr><tr><td>Lv.6</td><td>6</td><td>216</td></tr><tr><td>Lv.7</td><td>6</td><td>240</td></tr><tr><td>Lv.8</td><td>6</td><td>270</td></tr><tr><td>Lv.9</td><td>6</td><td>300</td></tr><tr><td>Lv.10</td><td>6</td><td>330</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/shield-of-vengeance/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-sword-of-divine-punishment" data-card data-cat="talent" data-tags="法術|精通" data-s="天罰之劍 sword of divine punishment 法術 精通 從空中降下聖劍攻擊目標，造成穿刺和閃電傷害 sword-of-divine-punishment">
+<header class="ch">
+<img class="ico" src="icons/talent_401205.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">天罰之劍<span class="en">Sword of Divine Punishment</span></h3>
+<div class="chips"><span class="chip cat cat-talent">天賦</span><span class="chip tg">法術</span><span class="chip tg">精通</span></div></div></header>
+<dl class="stats"><dt>類型</dt><dd>技能</dd><dt>武器需求</dt><dd>刀劍 長杖 法典</dd><dt>魔力消耗</dt><dd>70</dd><dt>冷卻時間</dt><dd>5 s</dd><dt>施放距離</dt><dd>2.8 m</dd></dl>
+<p class="desc">從空中降下聖劍攻擊目標，造成穿刺和閃電傷害</p>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>擊中數量：4</li><li>穿刺傷害：120%暴擊值</li><li>閃電傷害：70%元素攻擊</li><li>係數為等級 1 且未計入任何增傷時的數值。實戰中它會隨技能等級提升，並疊加英雄自身攜帶的各類增傷。</li></ul></div>
+<div class="sec coef"><h4 class="coefh">各技能等級的係數</h4><div class="tablecard"><table><thead><tr><th>條目</th><th>Lv.1</th><th>Lv.5</th><th>Lv.10</th></tr></thead><tbody><tr><td>穿刺傷害</td><td>120%暴擊值</td><td>198%暴擊值</td><td>306%暴擊值</td></tr><tr><td>閃電傷害</td><td>70%元素攻擊</td><td>115%元素攻擊</td><td>178%元素攻擊</td></tr></tbody></table></div></div>
+<details class="lvl"><summary>Lv.1–10 成長表（10 級）</summary><div class="tablecard"><table><thead><tr><th>等級</th><th>冷卻時間</th><th>魔力消耗</th></tr></thead><tbody><tr><td>Lv.1</td><td>5</td><td>70</td></tr><tr><td>Lv.2</td><td>5</td><td>90</td></tr><tr><td>Lv.3</td><td>5</td><td>110</td></tr><tr><td>Lv.4</td><td>5</td><td>135</td></tr><tr><td>Lv.5</td><td>5</td><td>155</td></tr><tr><td>Lv.6</td><td>5</td><td>180</td></tr><tr><td>Lv.7</td><td>5</td><td>200</td></tr><tr><td>Lv.8</td><td>5</td><td>225</td></tr><tr><td>Lv.9</td><td>5</td><td>250</td></tr><tr><td>Lv.10</td><td>5</td><td>275</td></tr></tbody></table></div></details>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/sword-of-divine-punishment/" rel="noopener">grandwiki 原頁 ↗</a>
+</article></div></section>
+<section class="grp" data-group><h2>天賦專精技能 <span class="n">12</span></h2><div class="grid"><article class="card sk c-cle" id="sk-awakening" data-card data-cat="mastery" data-tags="" data-s="覺醒 awakening awakening">
+<header class="ch">
+<img class="ico" src="icons/talent_402007.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">覺醒<span class="en">Awakening</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>魔力佔用 +100%</li><li>精通技能消耗 +60%</li><li>每個光環使你獲得魔力再生提升</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/awakening/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-banish" data-card data-cat="mastery" data-tags="" data-s="驅逐 banish banish">
+<header class="ch">
+<img class="ico" src="icons/talent_402011.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">驅逐<span class="en">Banish</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>輔助技能速度 +80%</li><li>所有精準 +70%</li><li>驅散目標時，對其造成【80%元素攻擊】的閃電傷害。</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/banish/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-barrier" data-card data-cat="mastery" data-tags="" data-s="壁壘 barrier barrier">
+<header class="ch">
+<img class="ico" src="icons/talent_402012.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">壁壘<span class="en">Barrier</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>生命 +60%</li><li>所有抗性 +60%</li><li>每3秒獲得1層堅毅。</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/barrier/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-blazing" data-card data-cat="mastery" data-tags="" data-s="炽热 blazing blazing">
+<header class="ch">
+<img class="ico" src="icons/talent_402002.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">炽热<span class="en">Blazing</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>火焰傷害 +100%</li><li>魔力 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/blazing/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-conquest" data-card data-cat="mastery" data-tags="" data-s="征伐 conquest conquest">
+<header class="ch">
+<img class="ico" src="icons/talent_402004.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">征伐<span class="en">Conquest</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>元素攻擊 +70%</li><li>基礎技能速度 +80%</li><li>暴擊值 +80%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/conquest/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-divine-grace" data-card data-cat="mastery" data-tags="" data-s="神佑 divine grace divine-grace">
+<header class="ch">
+<img class="ico" src="icons/talent_402006.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">神佑<span class="en">Divine Grace</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>護盾充能 +80%</li><li>生命強韌 +70%</li><li>生命值降到 20% 以下時，獲得護盾</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/divine-grace/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-divinity" data-card data-cat="mastery" data-tags="" data-s="神性 divinity divinity">
+<header class="ch">
+<img class="ico" src="icons/talent_402009.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">神性<span class="en">Divinity</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>力量 +100%</li><li>智力 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/divinity/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-glitter" data-card data-cat="mastery" data-tags="" data-s="閃耀 glitter glitter">
+<header class="ch">
+<img class="ico" src="icons/talent_402010.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">閃耀<span class="en">Glitter</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>削弱效果 +100%</li><li>法術精準 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/glitter/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-holy" data-card data-cat="mastery" data-tags="" data-s="神聖 holy holy">
+<header class="ch">
+<img class="ico" src="icons/talent_402005.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">神聖<span class="en">Holy</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>生命治療 +100%</li><li>治療有 20% 機率淨化目標</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/holy/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-judgment" data-card data-cat="mastery" data-tags="" data-s="判決 judgment judgment">
+<header class="ch">
+<img class="ico" src="icons/talent_402003.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">判決<span class="en">Judgment</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>閃電傷害 +100%</li><li>精通技能傷害 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/judgment/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-radiance" data-card data-cat="mastery" data-tags="" data-s="光輝 radiance radiance">
+<header class="ch">
+<img class="ico" src="icons/talent_402001.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">光輝<span class="en">Radiance</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>支援技能消耗 +100%</li><li>生命 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/radiance/" rel="noopener">grandwiki 原頁 ↗</a>
+</article>
+<article class="card sk c-cle" id="sk-vengeance" data-card data-cat="mastery" data-tags="" data-s="復仇 vengeance vengeance">
+<header class="ch">
+<img class="ico" src="icons/talent_402008.png" alt="" width="46" height="46" loading="lazy">
+<div class="ct"><h3 class="nm">復仇<span class="en">Vengeance</span></h3>
+<div class="chips"><span class="chip cat cat-mastery">精通</span></div></div></header>
+<dl class="stats"><dt>位置</dt><dd>位置會隨角色變化，此條目沒有固定的行列</dd></dl>
+<div class="sec"><h4>機制與關鍵詞</h4><ul class="mech"><li>物理攻擊 +100%</li><li>物理防禦 +100%</li></ul></div>
+<a class="src" href="https://pathofidle.grandwiki.com/zh-hant/skills/vengeance/" rel="noopener">grandwiki 原頁 ↗</a>
+</article></div></section>
+<p id="empty" class="empty" hidden>沒有符合條件的技能。</p>
+<footer class="dbfoot">
+  <p>資料來源：<a href="https://pathofidle.grandwiki.com/zh-hant/" rel="noopener">grandwiki · Path of Idle 資料庫</a>　·　資料版本 <b>2026-08-18</b>（遊戲 1.0.6.2）</p>
+  <p><b>非官方粉絲整理</b>，非遊戲官方發布；數值與機制隨改版可能變動，請以遊戲內現況為準。</p>
+  <p>頁面產生日期：2026-08-31　·　註：部分條目名與效果敘述沿用來源頁簡體字（忠實照抄）。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var q=document.getElementById('q');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('[data-card]'));
+  var groups=Array.prototype.slice.call(document.querySelectorAll('[data-group]'));
+  var cnt=document.getElementById('count');
+  var state={};
+  function apply(){
+    var t=q?q.value.trim().toLowerCase():'';
+    var n=0;
+    for(var i=0;i<cards.length;i++){
+      var c=cards[i],ok=true;
+      for(var k in state){
+        if(!state[k])continue;
+        var vals=(c.getAttribute('data-'+k)||'').split('|');
+        if(vals.indexOf(state[k])<0){ok=false;break;}
+      }
+      if(ok&&t){ok=(c.getAttribute('data-s')||'').indexOf(t)>=0;}
+      c.hidden=!ok; if(ok)n++;
+    }
+    for(var g=0;g<groups.length;g++){
+      var vis=false,gc=groups[g].querySelectorAll('[data-card]');
+      for(var j=0;j<gc.length;j++){if(!gc[j].hidden){vis=true;break;}}
+      groups[g].hidden=!vis;
+    }
+    if(cnt)cnt.textContent=n;
+    var empty=document.getElementById('empty'); if(empty)empty.hidden=(n>0);
+  }
+  if(q)q.addEventListener('input',apply);
+  var btns=Array.prototype.slice.call(document.querySelectorAll('.fbtn'));
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.getAttribute('data-k'),v=b.getAttribute('data-v');
+      state[k]=v;
+      btns.forEach(function(o){if(o.getAttribute('data-k')===k)o.classList.toggle('on',o===b);});
+      apply();
+    });
+  });
+  var ex=document.getElementById('expandall');
+  if(ex)ex.addEventListener('click',function(){
+    var ds=document.querySelectorAll('details.lvl'),open=ex.getAttribute('data-open')!=='1';
+    for(var i=0;i<ds.length;i++)ds[i].open=open;
+    ex.setAttribute('data-open',open?'1':'0');
+    ex.textContent=open?'收合全部成長表':'展開全部成長表';
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
