@@ -337,3 +337,32 @@ dl.corebody dd a{font-weight:600}
   font-variant-numeric:tabular-nums;margin:2px 0;line-height:1.2;overflow-wrap:anywhere}
 .cq i{display:block;font-style:normal;font-size:.72rem;color:var(--muted);
   font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+
+/* --- v3.1 技能頁互跳導覽 --- */
+.sknav{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}
+.sknav a{background:var(--panel);border:1px solid var(--line);border-bottom-color:var(--line);
+  border-radius:999px;padding:4px 13px;font-size:.8rem;color:var(--muted);white-space:nowrap}
+.sknav a:hover{border-color:var(--eldritch-dim);color:var(--eldritch);background:var(--eldritch-soft)}
+.sknav a.on{color:var(--eldritch);border-color:var(--eldritch-dim);background:var(--eldritch-soft);font-weight:600}
+
+/* --- v3.1 招牌特殊能力（橘色高亮，裝備卡頂） --- */
+.sec.sig{border-top:1px solid var(--line-soft);border-left:3px solid var(--gold);
+  padding-left:.7rem;background:var(--gold-soft);border-radius:0 8px 8px 0;
+  margin-top:11px;padding-top:9px;padding-bottom:8px}
+.sec.sig h4{color:var(--gold);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.sec.sig.none{border-left-color:var(--line);background:transparent}
+.sec.sig.none h4{color:var(--faint)}
+.sig .sigline{margin:5px 0 0;font-size:.85rem;color:var(--ink);line-height:1.6;
+  overflow-wrap:anywhere;word-break:break-word;min-width:0}
+.sig .sigline .sg{color:var(--gold);margin-right:5px}
+.sig .sigline a{font-weight:600}
+.sig .sigroll{display:inline-block;font-size:.68rem;color:var(--gold);border:1px solid var(--gold);
+  border-radius:4px;padding:0 5px;margin:0 2px;vertical-align:1px;
+  background:rgba(201,169,78,.10);white-space:nowrap}
+.sig .sigattr{font-size:.72rem;color:var(--muted);margin-left:4px}
+.sig .signote{font-size:.76rem;color:var(--faint);margin:6px 0 0;line-height:1.55}
+.sig .signone{color:var(--faint);font-size:.82rem;margin:2px 0 0}
+.sig .sigsrc{font-size:.66rem;color:var(--faint);margin-left:auto;font-weight:400}
+.sb.sig-skill{background:rgba(90,150,255,.15);color:#8fb6ff;border-color:rgba(90,150,255,.4)}
+.sb.sig-pin{background:var(--gold-soft);color:var(--gold);border-color:var(--gold)}
+.sb.sig-cand{background:rgba(217,164,65,.10);color:#e6bf6a;border-color:rgba(217,164,65,.45)}
