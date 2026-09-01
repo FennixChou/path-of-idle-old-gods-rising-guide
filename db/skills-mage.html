@@ -437,16 +437,23 @@
   var cards=Array.prototype.slice.call(document.querySelectorAll('[data-card]'));
   var groups=Array.prototype.slice.call(document.querySelectorAll('[data-group]'));
   var cnt=document.getElementById('count');
-  var state={};
+  var sel={};   // sel[維度鍵]={值:true,...}：各維度已選 chip（複選）
+  function anySel(){for(var k in sel){for(var v in sel[k]){if(sel[k][v])return true;}}return false;}
   function apply(){
     var t=q?q.value.trim().toLowerCase():'';
+    var any=anySel();
     var n=0;
     for(var i=0;i<cards.length;i++){
       var c=cards[i],ok=true;
-      for(var k in state){
-        if(!state[k])continue;
-        var vals=(c.getAttribute('data-'+k)||'').split('|');
-        if(vals.indexOf(state[k])<0){ok=false;break;}
+      if(any){
+        ok=false;
+        for(var k in sel){
+          var vals=(c.getAttribute('data-'+k)||'').split('|');
+          for(var v in sel[k]){
+            if(sel[k][v]&&vals.indexOf(v)>=0){ok=true;break;}
+          }
+          if(ok)break;
+        }
       }
       if(ok&&t){ok=(c.getAttribute('data-s')||'').indexOf(t)>=0;}
       c.hidden=!ok; if(ok)n++;
@@ -459,16 +466,30 @@
     if(cnt)cnt.textContent=n;
     var empty=document.getElementById('empty'); if(empty)empty.hidden=(n>0);
   }
-  if(q)q.addEventListener('input',apply);
   var btns=Array.prototype.slice.call(document.querySelectorAll('.fbtn'));
+  function syncBtns(){
+    var any=anySel();
+    btns.forEach(function(o){
+      var k=o.getAttribute('data-k'),v=o.getAttribute('data-v');
+      var on=v?!!(sel[k]&&sel[k][v]):!any;   // 「全部」鈕在無選時亮
+      o.classList.toggle('on',on);
+      o.setAttribute('aria-pressed',on?'true':'false');
+    });
+  }
+  if(q)q.addEventListener('input',apply);
   btns.forEach(function(b){
     b.addEventListener('click',function(){
       var k=b.getAttribute('data-k'),v=b.getAttribute('data-v');
-      state[k]=v;
-      btns.forEach(function(o){if(o.getAttribute('data-k')===k)o.classList.toggle('on',o===b);});
+      if(!v){sel={};}                        // 「全部／清除」：重置所有 chip
+      else{
+        if(!sel[k])sel[k]={};
+        if(sel[k][v])delete sel[k][v]; else sel[k][v]=true;
+      }
+      syncBtns();
       apply();
     });
   });
+  syncBtns();
   apply();
 })();
 </script>
